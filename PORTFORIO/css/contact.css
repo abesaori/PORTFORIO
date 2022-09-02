@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #2d2d2d;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    /* 全体メトリクス */
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    /* アニメーション設定 */
+    transition: 0.2s;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* btn */
+.nav_manu {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    position: fixed;
+    right: 51px;
+    top: 51px;
+    height: 35px;
+    z-index: 100;
+}
+
+.hamburger span {
+    background: #515151;
+    display: block;
+    width: 54px;
+    height: 4px;
+    position: relative;
+    top: 15px;
+    border-radius: 20px;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+    content: "";
+    background: #515151;
+    display: block;
+    width: 54px;
+    height: 4px;
+    position: absolute;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.hamburger span::before {
+    bottom: 15px;
+}
+.hamburger span::after {
+    top: 15px;
+}
+/* btn_open */
+.open span {
+    background: transparent;
+}
+
+.open span::before {
+    bottom: 0px;
+    transform: rotate(135deg);
+}
+
+.open span::after {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+/* menu */
+.menu:hover {
+    opacity: 0.5;
+}
+.nav_wrap {
+    background: #f2e4ea;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+
+.nav-top {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 3px;
+}
+.nav_wrap a {
+    display: block;
+}
+.nav_wrap li {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: rgba(45, 45, 45, 0.5) 1px solid;
+    padding: 55px 0 15px 40px;
+    box-sizing: border-box;
+}
+.nav_wrap span {
+    font-size: 18px;
+    color: #007598;
+    padding-left: 14px;
+}
+
+/* top */
+.logo {
+    margin: 0 auto;
+    width: 203px;
+    margin-bottom: 65px;
+    margin-top: 40px;
+}
+/* contact-text */
+.title,
+.subtitle {
+    text-align: center;
+    font-weight: bold;
+    color: #007598;
+}
+.title {
+    font-size: 40px;
+}
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+.info_text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+}
+.wrap_wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.7em;
+    padding: 10px 0;
+}
+.insta_wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    border-top: 1px solid #2d2d2d;
+    border-bottom: 1px solid #2d2d2d;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+.insta_wrap a {
+    display: inline-block;
+}
+.insta_color:hover {
+    display: inline-block;
+    background: linear-gradient(
+        45deg,
+        #4c64d3 0%,
+        #cf2e92 50%,
+        #f26939 70%,
+        #ffdd83 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.insta_left {
+    margin-left: 20px;
+    font-weight: bold;
+}
+/* よくある質問 */
+.puestion {
+    position: relative;
+    top: 80%;
+    max-width: 800px;
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
+}
+.question_wrap:hover {
+    display: block;
+    color: #007598;
+    opacity: 0.5;
+}
+/* 一覧戻る btn */
+.back {
+    padding-left: 15px;
+}
+.content_btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid rgba(45, 45, 45, 0.5);
+    max-width: 300px;
+    border-radius: 100px;
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.btn_text {
+    font-size: 16px;
+}
+
+/* contact_main */
+.wave-top {
+    position: relative;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    margin-top: -20px;
+    height: 21vh;
+}
+.wave-under {
+    width: 100%;
+    height: 21vh;
+    margin-top: -1px;
+}
+.back_color {
+    background: rgba(246, 195, 217, 0.5);
+}
+/* contact form */
+.contactform {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contactform li {
+    padding-bottom: 30px;
+}
+.form_text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contactform p {
+    margin-top: 5px;
+}
+.must {
+    border: 1px #eb2553 solid;
+    background: #eb2553;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+.box_wrap {
+    border: 1px #fff solid;
+    width: 600px;
+    height: 60px;
+}
+.text_box {
+    border: 1px #fff solid;
+    width: 600px;
+    height: 200px;
+}
+#label,
+#maii,
+#comment {
+    font-size: 16px;
+}
+#post_btn {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #f26146;
+    width: 282px;
+    display: flex;
+    justify-content: center;
+    background: #f26146;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 95px;
+}
+
+/* footer */
+.footer {
+    margin-top: 65px;
+    padding: 25px 0 50px;
+    text-align: center;
+    border-top: 1px solid rgba(45, 45, 45, 0.5);
+}

@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #2d2d2d;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    /* 全体メトリクス */
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    /* アニメーション設定 */
+    transition: 0.2s;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* btn */
+.nav_manu {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    position: fixed;
+    right: 51px;
+    top: 51px;
+    height: 35px;
+    z-index: 100;
+}
+
+.hamburger span {
+    background: #515151;
+    display: block;
+    width: 54px;
+    height: 4px;
+    position: relative;
+    top: 15px;
+    border-radius: 20px;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+    content: "";
+    background: #515151;
+    display: block;
+    width: 54px;
+    height: 4px;
+    position: absolute;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.hamburger span::before {
+    bottom: 15px;
+}
+.hamburger span::after {
+    top: 15px;
+}
+/* btn_open */
+.open span {
+    background: transparent;
+}
+
+.open span::before {
+    bottom: 0px;
+    transform: rotate(135deg);
+}
+
+.open span::after {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+/* menu */
+.menu:hover {
+    opacity: 0.5;
+}
+.nav_wrap {
+    background: #f2e4ea;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+
+.nav-top {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 80px;
+    padding-bottom: 3px;
+}
+.nav_wrap a {
+    display: block;
+}
+.nav_wrap li {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: rgba(45, 45, 45, 0.5) 1px solid;
+    padding: 55px 0 15px 40px;
+    box-sizing: border-box;
+}
+.nav_wrap span {
+    font-size: 18px;
+    color: #007598;
+    padding-left: 14px;
+}
+
+/* line */
+#ABOUT {
+    position: relative;
+}
+.about_line {
+    background: url(../image/about_line.png) repeat-y top left;
+    height: 100%;
+    width: 139px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* top */
+.logo_img {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.logo_img {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+/* about me*/
+.me_pic {
+    border-radius: 10px;
+}
+.about_pic {
+    z-index: 1;
+}
+.about_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 25px;
+    letter-spacing: 1.5px;
+}
+.subtitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+.myself {
+    margin-top: 85px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.7em;
+}
+.myself_text {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+/* story */
+.story_left p {
+    font-size: 18px;
+    line-height: 2.1em;
+}
+.story_right p {
+    font-size: 18px;
+    line-height: 2.1em;
+}
+.strong {
+    font-weight: bold;
+    font-size: 20px;
+}
+.story_wrap {
+    position: relative;
+    max-width: 1000px;
+    margin-top: 100px;
+}
+.story_wrap_right {
+    position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-top: 100px;
+}
+.story_left {
+    max-width: 650px;
+    text-align: left;
+    margin-left: 200px;
+}
+.story_right {
+    max-width: 650px;
+    text-align: left;
+    margin-left: 200px;
+}
+.text_number01 {
+    position: absolute;
+    top: -50px;
+    left: 12%;
+}
+.text_number02 {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+.text_number03 {
+    position: absolute;
+    top: -30%;
+    left: 15%;
+}
+.text_number04 {
+    position: absolute;
+    top: -30%;
+    right: 15%;
+}
+.story_outline {
+    padding-bottom: 50px;
+}
+/* 相談btn */
+.outline {
+    padding-bottom: 50px;
+}
+.icon {
+    padding-left: 15px;
+}
+.contact {
+    border: 1px solid #f26146;
+    width: 282px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background: #f26146;
+    color: #fff;
+    border-radius: 100px;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact:hover {
+    border: 4px solid #f26146;
+    width: 282px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    color: #f26146;
+    border-radius: 100px;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* footer */
+.footer {
+    padding: 65px 0 50px;
+    text-align: center;
+    border-top: 1px solid rgba(45, 45, 45, 0.5);
+}

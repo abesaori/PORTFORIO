@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abe.saori portfolio</title>
+    <meta name="description" content="abe.saori design..portfolio|一人一人の想いに寄り添うをモットーにデザインのお仕事を行っております。">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Font_awasome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section id="top">
+        <h1 class="logo"><img src="image/logo.png" alt="logo"></h1>
+        <!-- hamburger_menu -->
+        <div class="hamburger"><span></span></div>
+        <!-- 開いたらmenu -->
+        <nav class="nav_manu">
+            <div class="nav_wrap">
+                <div class="nav-top"><a href="index.html">MENU</a></div>
+                <ul>
+                    <!-- 各項目のリンクを貼る -->
+                    <li><a href="index.html#SERVICE" class="menu">SERVICE<span>わたしのできること</span></a></li>
+                    <li><a href="index.html#WORK" class="menu">WORK<span>実績</span></a></li>
+                    <li><a href="about.html" class="menu">ABOUT ME<span>わたしについて</span></a></li>
+                    <li><a href="index.html#QandA" class="menu">Q&A<span>よくあるご質問</span></a></li>
+                    <li><a href="contact.html" class="menu">CONTACT<span>お問合せ</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section id="contac">
+        <h2 class="title">CONTACT</h2>
+        <p class="subtitle">お問い合わせ</p>
+        <p class="info_text">
+            各種ご依頼やお問い合わせ、制作に関するご相談・ご質問はこちらよりお気軽にお問い合わせください。<br>ご連絡をいただいてから1-2営業日以内で返信いたします。</p>
+        <p class="wrap_wrap">InstagramのDMからも受け付けておりますので、そちらもご利用ください。
+        </p>
+        <!-- insta link -->
+        <p class="insta_wrap"><a href="https://www.instagram.com/saori.bebe39/" class="insta_color">▷<span
+                    class="insta_left">Instagram..@saori.bebe39</span></a></p>
+        <div class="puestion">
+            <a href="index.html#QandA" class="question_wrap">よくある質問はこちら<span class="back">▶</span></a>
+        </div>
+
+        <img src="image/pc_wavetop.png" alt="" class="wave-top">
+        <!-- contact form -->
+        <div class="back_color">
+            <div class="contactform">
+                <form action="" method="post">
+                    <ul>
+                        <li><label for="label" class="form_text">お名前<span class="must">必須</span></label>
+                            <p><input id="label" type="text" name="yourname" placeholder="山田 太郎" class="box_wrap"></p>
+                        </li>
+                        <li><label for="label" class="form_text">おなまえ<span class="must">必須</span></label>
+                            <p><input id="label" type="text" name="yourname_name" placeholder="やまだ たろう"
+                                    class="box_wrap">
+                            </p>
+                        </li>
+                        <li><label for="mail" class="form_text">メールアドレス<span class="must">必須</span></label>
+                            <p><input id="maii" type="email" name="email" placeholder="aaaa.123@design.com"
+                                    class="box_wrap"></p>
+                        </li>
+                        <li><label for="comment" class="form_text">お問合せ内容<span class="must">必須</span></label>
+                            <p><textarea id="comment" type="content" name="contact" placeholder="こちらにお問合せ内容をご記入ください。"
+                                    class="text_box"></textarea></p>
+                        </li>
+                    </ul>
+                    <input id="post_btn" type="submit" value="入力内容を送信する">
+                </form>
+            </div>
+        </div>
+        <img src="image/pc-waveunder.png" alt="" class="wave-under">
+    </section>
+
+
+    <div class="content_btn">
+        <a href="index.html" class="back_btn">◁<span class="back">一覧に戻る</span></a>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p><small>&copy; abe.saori DESIGN..</small></p>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            //ハンバーガーメニュー
+            $('.hamburger,.nav_manu li').click(function () {
+                $('.nav_manu').fadeToggle();
+                $('.hamburger').toggleClass('open');
+            });
+            // slider 
+            $('.work_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+        });
+
+    </script>
+</body>
+
+</html>

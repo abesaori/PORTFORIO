@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abe.saori portfolio</title>
+    <meta name="description" content="abe.saori design..portfolio|一人一人の想いに寄り添うをモットーにデザインのお仕事を行っております。">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/work.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Font_awasome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- hamburger_menu -->
+    <div class="hamburger"><span></span></div>
+    <!-- 開いたらmenu -->
+    <nav class="nav_manu">
+        <div class="nav_wrap">
+            <div class="nav-top">MENU</div>
+            <ul>
+                <!-- 各項目のリンクを貼る -->
+                <li><a href="index.html#SERVICE" class="menu">SERVICE<span>わたしのできること</span></a></li>
+                <li><a href="index.html#WORK" class="menu">WORK<span>実績</span></a></li>
+                <li><a href="about.html" class="menu">ABOUT ME<span>わたしについて</span></a></li>
+                <li><a href="index.html#QandA" class="menu">Q&A<span>よくあるご質問</span></a></li>
+                <li><a href="contact.html" class="menu">CONTACT<span>お問合せ</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main visual -->
+    <section id="work">
+        <div class="work_line_cosme"></div>
+        <div class="work_visual">
+            <h1 class="logo_img"><img src="image/logo.png" alt="logo"></h1>
+            <div class="work_detail"><img src="image/benner_cosme.png" alt="" class="work_pic"></div>
+        </div>
+
+        <!-- text -->
+        <div class="work_overview">
+            <div class="overview_wrap">
+                <h2>概要<span class="sub">|化粧品バナー</span></h2>
+                <dl>
+                    <dt>カテゴリ</dt>
+                    <dd>バナー（トレース）</dd>
+                    <dt>担当範囲</dt>
+                    <dd>デザイン/素材選定</dd>
+                    <dt>使用ツール</dt>
+                    <dd>illustrator</dd>
+                    <dt>制作期間</dt>
+                    <dd>1週間</dd>
+                    <dt>費用</dt>
+                    <dd>￥5,000<span class="important_work">※費用は案件により異なります。</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="work_overview">
+            <div class="overview_wrap">
+                <h3>制作のPOINT</h3>
+                <div class="text_detail">
+                    <p class="text">
+                        背景にはグラデーションメッシュを使用し全体に動きをつけています。さらに、水彩テクスチャを商品の後ろに配置し、商品に目が行くようにしています。全体敵にピンクを使用し、女性らしさを演出しています。<br>「詳しくは～」のボタン部分は、グラデーションで中央を濃くすることにより、ボタンに立体感をつけています。
+                    </p>
+                </div>
+                <div class="btn">
+                    <div class="home_back">
+                        <a href="index.html#WORK" class="back_btn">◁<span class="back">一覧に戻る</span></a>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- contact -->
+    <div class="contact_wrap">
+        <div class="contact_detail">
+            <p class="request_text">ご相談・ご依頼お待ちしております。</p>
+            <p class="request_sub">まずは、あなたの想いを聴かせてください。無料ご相談・お見積もりいたします。<br>ご相談・ご依頼は下記の「お問合わせフォーム」からご連絡ください。
+            </p>
+            <p class="importent">※セールスなどのお問い合わせ、ご相談はご返信できかねますので、ご遠慮ください。</p>
+        </div>
+        <div class="contact">
+            <a href="contact.html" class="contact_cta">お問合わせフォームはこちら</a>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <p><small>&copy; abe.saori DESIGN..</small></p>
+        </div>
+    </footer>
+    <script>
+        $(function () {
+            //ハンバーガーメニュー
+            $('.hamburger,.nav_manu li').click(function () {
+                $('.nav_manu').fadeToggle();
+                $('.hamburger').toggleClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
