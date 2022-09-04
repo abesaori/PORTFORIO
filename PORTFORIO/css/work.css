@@ -56,7 +56,7 @@ img {
     right: 51px;
     top: 51px;
     height: 35px;
-    z-index: 100;
+    z-index: 999;
 }
 
 .hamburger span {
@@ -114,7 +114,7 @@ img {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 5;
+    z-index: 998;
 }
 
 .nav-top {
@@ -123,7 +123,7 @@ img {
     margin: 0 auto;
     font-size: 40px;
     font-weight: bold;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 3px;
 }
 .nav_wrap a {
@@ -201,14 +201,14 @@ img {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 15px;
 }
 .work_detail {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 .work_pic {
-    max-width: 72.3%;
+    max-width: 65.5%;
 }
 /* work detail */
 h2 {
@@ -233,10 +233,10 @@ h3 {
     font-size: 18px;
     font-weight: normal;
     letter-spacing: 1.3px;
-    padding-left: 3px;
+    padding-left: 5px;
 }
 .work_overview {
-    margin-left: 145px;
+    margin-left: 130px;
 }
 .overview_wrap dl {
     display: flex;
@@ -260,7 +260,7 @@ h3 {
     padding: 15px 0;
 }
 .important_work {
-    padding-left: 102px;
+    padding-left: 50px;
     font-size: 14px;
     font-weight: lighter;
 }
@@ -268,7 +268,7 @@ h3 {
 .text_detail {
     max-width: 800px;
     margin: 0 auto;
-    padding: 15px 50px 135px;
+    padding: 15px 0 135px 40px;
     box-sizing: border-box;
 }
 .text {
@@ -276,18 +276,13 @@ h3 {
     line-height: 1.72em;
 }
 /* lp/cafeページで切り替え */
-.capture_detail {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 15px 0 40px;
-    margin-left: 145px;
-}
-.capture_bottom {
-    margin-bottom: 93px;
+.capture_outline {
+    margin-bottom: 50px;
+    padding: 0 0 5px 45px;
 }
 .capture_bottom ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .lp_pc {
     max-width: 475px;
@@ -297,21 +292,16 @@ h3 {
 }
 
 /* salonページで切り替え */
-.capture_wrap {
+.capture_pic {
     max-width: 800px;
     margin: 0 auto;
-    padding: 15px 0 40px;
-}
-.capture_pic {
     text-align: center;
 }
 .salon_pic {
-    max-width: 81.9%;
-    margin-bottom: 93px;
+    max-width: 65%;
 }
 /* home_back */
 .home_back {
-    max-width: 1000px;
     margin: 0 auto;
     border: 1px solid rgba(45, 45, 45, 0.5);
     max-width: 282px;
@@ -323,7 +313,7 @@ h3 {
     text-align: center;
 }
 .btn {
-    padding-bottom: 80px;
+    padding: 40px 0 60px;
 }
 .back {
     padding-left: 15px;
@@ -332,15 +322,17 @@ h3 {
 .contact_wrap {
     width: 100%;
     text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
     background: #fff;
     border-top: 1px rgba(45, 45, 45, 0.3) solid;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 .request_text {
     font-size: 30px;
     font-weight: bold;
-    padding: 44px 0 37px;
+    padding: 45px 0 20px;
 }
 .request_sub {
     font-size: 20px;
@@ -369,7 +361,7 @@ h3 {
     margin-top: 56px;
 }
 .contact_cta:hover {
-    border: 4px solid #f26146;
+    border: 3px solid #f26146;
     width: 282px;
     display: flex;
     justify-content: center;
@@ -390,4 +382,313 @@ h3 {
     left: 0;
     text-align: center;
     padding: 50px 0;
+}
+/* レスポンシブ */
+@media screen and (max-width: 1125px) {
+    .work_line_lp {
+        background: url(../image/companyline_sp.png) repeat-y top left;
+    }
+    .work_line_cosme {
+        background: url(../image/cosmeline_sp.png) repeat-y top left;
+    }
+    .work_line_cafe {
+        background: url(../image/cafeline_sp.png) repeat-y top left;
+    }
+    .work_line_camp {
+        background: url(../image/outdoorline_sp.png) repeat-y top left;
+    }
+    .work_line_salon {
+        background: url(../image/salonline_sp.png) repeat-y top left;
+    }
+    .work_line_school {
+        background: url(../image/schoolline_sp.png) repeat-y top left;
+    }
+    .work_pic {
+        width: 63.5%;
+        margin-left: 50px;
+    }
+    /* work detail */
+    h2,
+    h3 {
+        font-size: 2.3vw;
+    }
+    .sub,
+    .text,
+    .overview_wrap dt,
+    .overview_wrap dd,
+    .home_back,
+    .request_sub {
+        font-size: 1.75vw;
+    }
+    .work_overview {
+        margin-left: 45px;
+    }
+    .text_detail {
+        padding: 15px 40px 120px 40px;
+    }
+    .important_work,
+    .importent {
+        font-size: 1.4vw;
+    }
+    .capture_bottom {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .lp_pc {
+        max-width: 80%;
+    }
+    .lp_sp {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    /* main visual */
+    .logo_img img {
+        width: 150px;
+    }
+    /* hambuger menu */
+    .hamburger {
+        right: 5%;
+        top: 3%;
+        height: 35px;
+    }
+    .hamburger span {
+        width: 40px;
+        height: 2px;
+        top: 17px;
+    }
+    .hamburger span::before,
+    .hamburger span::after {
+        content: "";
+        width: 40px;
+        height: 2px;
+    }
+    .hamburger span::before {
+        bottom: 13px;
+    }
+    .hamburger span::after {
+        top: 13px;
+    }
+    .open span {
+        background: transparent;
+    }
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(135deg);
+    }
+    .open span::after {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+    .nav-top {
+        max-width: 767px;
+        font-size: 3.3vw;
+        padding-top: 25px;
+        margin-bottom: 50px;
+    }
+    .nav_wrap li {
+        max-width: 767px;
+        font-size: 2.4vw;
+        padding: 40px 0 20px 20px;
+    }
+    .scroll {
+        bottom: 0;
+        right: 10%;
+    }
+    /* home_back */
+    .home_back {
+        max-width: 220px;
+        padding: 15px 18px;
+        font-size: 20px;
+    }
+    .btn {
+        padding: 40px 10px 40px;
+    }
+    .back {
+        padding-left: 15px;
+    }
+    /* contact */
+    .request_text {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1025px) {
+    h2 {
+        padding: 0 0 5px 35px;
+    }
+    h3 {
+        max-width: 800px;
+        padding: 90px 0 5px 20px;
+    }
+    .overview_wrap dl {
+        max-width: 750px;
+    }
+    .text_detail {
+        max-width: 750px;
+        padding: 15px 0 120px 35px;
+    }
+}
+@media screen and (max-width: 978px) {
+    h2 {
+        max-width: 730px;
+        padding: 0 0 5px 20px;
+    }
+    h3 {
+        max-width: 730px;
+        padding: 90px 0 5px 20px;
+    }
+    .overview_wrap dt {
+        padding: 15px 0 15px 30px;
+    }
+    .overview_wrap dl {
+        max-width: 680px;
+    }
+    .text_detail {
+        max-width: 680px;
+        padding: 15px 0 120px 26px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .sub,
+    .text,
+    .overview_wrap dt,
+    .overview_wrap dd,
+    .home_back,
+    .request_sub {
+        font-size: 2.1vw;
+    }
+    h2 {
+        font-size: 2.3vw;
+        max-width: 700px;
+        padding: 0 0 5px 20px;
+    }
+    h3 {
+        font-size: 2.3vw;
+        max-width: 700px;
+        padding: 90px 0 5px 20px;
+    }
+    .overview_wrap dt {
+        padding: 15px 0 15px 30px;
+    }
+    .overview_wrap dl {
+        max-width: 650px;
+    }
+    .text_detail {
+        max-width: 650px;
+        padding: 15px 0 120px 26px;
+    }
+    .capture_bottom {
+        max-width: 590px;
+        margin: 0 auto;
+    }
+    .lp_pc {
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 830px) {
+    /* work detail */
+    h2 {
+        max-width: 650px;
+        padding: 0 0 5px 20px;
+        position: relative;
+        z-index: 2;
+    }
+    h3 {
+        max-width: 650px;
+        padding: 90px 0 5px 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .overview_wrap dt {
+        padding: 15px 0 15px 30px;
+        position: relative;
+        z-index: 2;
+    }
+    .overview_wrap dl {
+        max-width: 620px;
+        position: relative;
+        z-index: 2;
+    }
+    .text_detail {
+        max-width: 620px;
+        padding: 15px 0 120px 26px;
+        position: relative;
+        z-index: 2;
+    }
+    h3 {
+        padding: 70px 0 5px 20px;
+    }
+    .sub {
+        padding-left: 3px;
+    }
+    .work_overview {
+        margin-left: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo_img img {
+        max-width: 121px;
+        margin-bottom: 18px;
+        margin-top: 15px;
+        position: relative;
+        z-index: 4;
+    }
+    /* main visual */
+    .work_detail {
+        margin-top: 0;
+    }
+    .work_pic {
+        max-width: 60%;
+        position: relative;
+        z-index: 3;
+    }
+    /* work detail */
+    .work_overview {
+        margin-left: 0;
+    }
+    h2 {
+        max-width: 600px;
+        padding: 0 10px 5px 20px;
+    }
+    h3 {
+        max-width: 600px;
+        padding: 90px 10px 5px 20px;
+    }
+    .request_text {
+        font-size: 24px;
+    }
+    .important_work {
+        display: inline-block;
+        padding: 0 10px 0 30px;
+        box-sizing: border-box;
+    }
+    .overview_wrap dt {
+        padding: 15px 10px 15px 30px;
+    }
+    .overview_wrap dl {
+        max-width: 570px;
+    }
+    .text_detail {
+        max-width: 570px;
+        padding: 15px 25px 120px 26px;
+    }
+    .capture_bottom {
+        max-width: 500px;
+        padding: 0 10px 0 80px;
+        position: relative;
+        z-index: 2;
+    }
+    .lp_pc {
+        max-width: 70%;
+    }
+    .capture_pic {
+        max-width: 500px;
+    }
+    .salon_pic {
+        max-width: 75%;
+        padding: 0 10px 0 70px;
+        position: relative;
+        z-index: 2;
+    }
 }
