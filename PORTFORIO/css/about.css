@@ -473,7 +473,7 @@ img {
 @media screen and (max-width: 798px) {
     .story_left,
     .story_right {
-        max-width: 400px;
+        max-width: 100%;
     }
     .contact {
         max-width: 767px;
