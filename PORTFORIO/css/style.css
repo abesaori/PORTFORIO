@@ -56,6 +56,7 @@ img {
     right: 51px;
     top: 51px;
     height: 35px;
+    cursor: pointer;
     z-index: 999;
 }
 
@@ -106,16 +107,23 @@ img {
 .menu:hover {
     opacity: 0.5;
 }
-.nav_wrap {
-    background: #f2e4ea;
+.nav_manu {
     position: fixed;
+    background: #f2e4ea;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: 998;
 }
-
+.nav_wrap {
+    background: #f2e4ea;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+}
 .nav-top {
     text-align: center;
     max-width: 1000px;
@@ -248,10 +256,10 @@ img {
 .wave-under {
     width: 100%;
     height: 30vh;
-    margin-top: -1px;
+    margin-top: -2px;
 }
 .backcolor {
-    background: rgba(246, 195, 217, 0.5);
+    background: #f4d7e5;
     margin-top: -40px;
 }
 .service_wrap {
@@ -263,30 +271,26 @@ img {
 }
 .service_detailwrap {
     flex-direction: column;
+    padding-top: 30px;
 }
 .service_detail {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-left: 150px;
-    box-sizing: border-box;
 }
-.shadow_logo img {
+.shadow_logo {
     position: absolute;
-    top: -50px;
+    top: -108px;
     left: 0;
 }
-.copy {
-    margin: 0 auto;
-    max-width: 625px;
-    padding-right: 30px;
-}
-.service_img img {
-    margin-top: 50px;
-    max-width: 100%;
+.service_img {
+    margin-top: 20px;
 }
 /* service-text */
 .text_wrap_pc {
-    margin: 100px 0 50px 50px;
+    margin: 50px 0;
+    width: 70%;
 }
 .text_wrap_sp {
     display: none;
@@ -319,19 +323,19 @@ img {
 }
 /* work */
 .back_color {
-    background: rgba(246, 195, 217, 0.5);
+    background: #f4d7e5;
 }
 .work {
     display: flex;
     justify-content: right;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-}
-.work_wrap h2 {
-    padding-top: 110px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 .work_logo {
-    max-width: 439px;
+    max-width: 55%;
     margin-bottom: 10px;
 }
 /* slider */
@@ -350,6 +354,7 @@ img {
 .slick-dots {
     bottom: -35px;
 }
+
 .viewmore {
     max-width: 1366px;
     margin: 0 auto;
@@ -468,12 +473,14 @@ img {
     padding-top: 5px;
 }
 .QandA_wrap {
-    text-align: center;
+    margin: 0 55px;
 }
 .QandA_detail {
-    display: inline-block;
+    display: block;
     text-align: left;
     padding-top: 27px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 .QandA_conteiner {
     padding: 11px 0;
@@ -517,13 +524,13 @@ details summary::before {
 .contact_wave {
     width: 100%;
     height: 30vh;
-    margin-bottom: -1px;
+    margin-bottom: -3px;
     padding-top: 15px;
 }
 .contactunder_wave {
     width: 100%;
     height: 30vh;
-    margin-top: -1px;
+    margin-top: -2px;
 }
 .contact {
     max-width: 1000px;
@@ -545,6 +552,8 @@ details summary::before {
     line-height: 2.5em;
 }
 .viewmore_cta {
+    position: relative;
+    z-index: 8;
     border: 1px solid #f26146;
     width: 260px;
     display: flex;
@@ -616,6 +625,9 @@ details summary::before {
     }
 }
 @media screen and (max-width: 1035px) {
+    .work_logo {
+        max-width: 44%;
+    }
     .main_text {
         font-size: 4.5vw;
     }
@@ -628,8 +640,14 @@ details summary::before {
     .wave-under {
         height: 25vh;
     }
+    .woman_text {
+        padding: 35px 0 0 50px;
+    }
 }
 @media screen and (max-width: 850px) {
+    .topwrap {
+        margin-top: 35px;
+    }
     .top_img {
         padding-top: 15px;
     }
@@ -639,12 +657,15 @@ details summary::before {
     .topup {
         max-width: 80%;
     }
+    .woman_text {
+        padding: 40px 0 0 50px;
+    }
 }
 @media screen and (max-width: 767px) {
     /* hambuger menu */
     .hamburger {
         right: 5%;
-        top: 3%;
+        top: 1.5%;
         height: 35px;
     }
     .hamburger span {
@@ -690,6 +711,7 @@ details summary::before {
     .scroll {
         bottom: 0;
         right: 10%;
+        font-size: 12px;
     }
     /* top_page */
     .logo {
@@ -705,7 +727,7 @@ details summary::before {
         text-align: center;
     }
     .main_text {
-        font-size: 3.9vw;
+        font-size: 30px;
         line-height: 1.55em;
         padding-top: 10px;
     }
@@ -713,7 +735,7 @@ details summary::before {
         padding-left: 0;
     }
     .main_read {
-        font-size: 2vw;
+        font-size: 16px;
         line-height: 1.95em;
     }
     .sp {
@@ -731,42 +753,51 @@ details summary::before {
     }
 
     .backcolor {
-        margin-top: -15px;
         padding: 0 10px;
     }
     /* service */
     .wave-top {
         height: 20vh;
     }
-    .shadow_logo img {
-        position: absolute;
-        left: 27%;
-        top: -9%;
-        width: 40%;
+    .shadow_logo {
+        left: 25%;
+        top: -13%;
+        width: 54%;
+    }
+    .service_detailwrap {
+        padding-top: 40px;
     }
     .service_wrap {
-        padding: 50px 20px 0;
         display: flex;
+        justify-content: center;
         max-width: 767px;
+        padding: 0;
     }
     .service_detail {
         padding-left: 0;
+    }
+    .service_img img {
+        width: 85%;
     }
     .detail_speace {
         display: flex;
         justify-content: space-between;
         max-width: 767px;
+        width: 90%;
         margin: 0 auto;
     }
     .detail_clum {
         max-width: 767px;
+        margin: 0 auto;
+        width: 90%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
     /* service-text */
     .text_service {
-        padding-top: 75px;
+        padding: 75px 0 5px 0;
+        font-size: 5.3vw;
     }
     .text_wrap_sp {
         display: block;
@@ -774,15 +805,8 @@ details summary::before {
     .text_wrap_pc {
         display: none;
     }
-    .title {
-        padding-top: 50px;
-        font-size: 5.3vw;
-    }
-    .text_service {
-        font-size: 25px;
-    }
     .text_01 {
-        font-size: 20px;
+        font-size: 3.5vw;
         line-height: 1.7em;
     }
     .copy {
@@ -797,13 +821,8 @@ details summary::before {
         align-items: center;
         position: relative;
     }
-    .work_wrap h2 {
-        padding-top: 30px;
-    }
     .work_logo {
         margin-bottom: 0;
-    }
-    .work_img {
         position: absolute;
         max-width: 40%;
         top: 0;
@@ -820,24 +839,36 @@ details summary::before {
     .wave-under {
         height: 30vh;
     }
-    .slick-dots {
-        bottom: -38px;
-    }
     .slider {
-        max-width: 767px;
-        padding-top: 70px;
-    }
-    .slider li {
-        margin: 0 10px;
+        padding-top: 48px;
     }
     .slick-dots {
         bottom: -35px;
     }
+    /* swiper */
+    .slider_detail {
+        width: 100%;
+        margin: 40px 0;
+        padding: 45px 0;
+    }
+    .work_slider {
+        opacity: 0.4;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .work_slider img {
+        width: 100%;
+    }
+    .work_slider-active {
+        opacity: 1;
+        z-index: 1;
+        transform: scale(1.5);
+    }
     .viewmore {
-        position: relative;
         max-width: 767px;
+        margin: 0 auto;
         text-align: center;
-        width: 220px;
+        width: 40%;
         display: flex;
         font-size: 17px;
     }
@@ -935,6 +966,9 @@ details summary::before {
         font-size: 16px;
     }
     /* Q&A */
+    .QandA_wrap {
+        margin: 0 20px 0 40px;
+    }
     .QandA_wrap h2 {
         padding-top: 40px;
     }
@@ -993,9 +1027,8 @@ details summary::before {
         margin: 0 auto;
     }
     .viewmore_cta {
-        max-width: 212px;
-        width: 100%;
-        font-size: 2vw;
+        width: 40%;
+        font-size: 3vw;
     }
     .viewmore_contact {
         margin-top: 25px;
@@ -1006,10 +1039,6 @@ details summary::before {
         font-size: 2vw;
     }
     /* top-btn*/
-    .top_btn {
-        margin: 50px 0 75px;
-        max-width: 767px;
-    }
     .topup {
         max-width: 30%;
     }
@@ -1018,5 +1047,25 @@ details summary::before {
         text-align: center;
         padding: 15px 0 50px;
         border-top: 1px rgba(45, 45, 45, 0.3) solid;
+    }
+
+    @media screen and (max-width: 315px) {
+        .main_text {
+            font-size: 9.5vw;
+        }
+        .main_read {
+            font-size: 5vw;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 2px;
+            top: 17px;
+        }
+        .hamburger span::before,
+        .hamburger span::after {
+            content: "";
+            width: 30px;
+            height: 2px;
+        }
     }
 }

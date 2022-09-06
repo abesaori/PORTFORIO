@@ -54,8 +54,9 @@ img {
     display: block;
     position: fixed;
     right: 51px;
-    top: 51px;
+    top: 30px;
     height: 35px;
+    cursor: pointer;
     z-index: 999;
 }
 
@@ -106,17 +107,18 @@ img {
 .menu:hover {
     opacity: 0.5;
 }
-.nav_wrap {
-    background: #f2e4ea;
-    height: 100vh;
+.nav_manu {
     position: fixed;
+}
+.nav_manu {
+    position: fixed;
+    background: #f2e4ea;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: 998;
 }
-
 .nav-top {
     text-align: center;
     max-width: 1000px;
@@ -143,7 +145,41 @@ img {
     color: #007598;
     padding-left: 14px;
 }
-
+/* view more pege! */
+.logo_img a {
+    display: block;
+}
+.logo_wrap {
+    text-align: center;
+    padding-top: 35px;
+}
+.logo_wrap img {
+    width: 14%;
+}
+.view_more {
+    height: 100vh;
+    background: rgba(127, 127, 127, 0.8);
+}
+.view_moretext {
+    text-align: center;
+    padding: 200px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+.home_back_btn {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
+.back_tab {
+    font-size: 17px;
+    padding-left: 20px;
+}
+.copytab {
+    text-align: center;
+}
+/* ////// */
 /* line img */
 #work {
     position: relative;
@@ -201,10 +237,10 @@ img {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 19px;
 }
 .work_detail {
-    margin-top: 20px;
+    margin-top: 35px;
     text-align: center;
 }
 .work_pic {
@@ -215,18 +251,22 @@ h2 {
     letter-spacing: 1.3px;
     max-width: 850px;
     margin: 0 auto;
+    width: 90%;
     font-size: 20px;
     font-weight: bold;
     padding: 0 0 5px 45px;
+    box-sizing: border-box;
     border-bottom: #1e1e1e 2px solid;
 }
 h3 {
     letter-spacing: 1.3px;
     max-width: 850px;
     margin: 0 auto;
+    width: 90%;
     font-size: 20px;
     font-weight: bold;
     padding: 130px 0 5px 45px;
+    box-sizing: border-box;
     border-bottom: #1e1e1e 2px solid;
 }
 .sub {
@@ -243,6 +283,7 @@ h3 {
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
+    width: 85%;
 }
 .overview_wrap dt {
     font-size: 18px;
@@ -268,7 +309,8 @@ h3 {
 .text_detail {
     max-width: 800px;
     margin: 0 auto;
-    padding: 15px 0 135px 40px;
+    width: 90%;
+    padding: 15px 0 40px;
     box-sizing: border-box;
 }
 .text {
@@ -278,7 +320,7 @@ h3 {
 /* lp/cafeページで切り替え */
 .capture_outline {
     margin-bottom: 50px;
-    padding: 0 0 5px 45px;
+    padding: 25px 0 5px 45px;
 }
 .capture_bottom ul {
     display: flex;
@@ -299,6 +341,9 @@ h3 {
 }
 .salon_pic {
     max-width: 65%;
+}
+.bold {
+    font-weight: bold;
 }
 /* home_back */
 .home_back {
@@ -342,37 +387,39 @@ h3 {
     font-size: 15px;
     line-height: 2.5em;
 }
-.contact_cta {
-    border: 1px solid #f26146;
-    width: 282px;
-    max-width: 1000px;
-    margin: 0 auto;
-    background: #f26146;
-    color: #fff;
-    border-radius: 100px;
-    padding: 20px 30px;
-    font-size: 20px;
-    font-weight: bold;
-    z-index: 20;
-}
 .contact {
     display: flex;
     justify-content: center;
     margin-top: 56px;
 }
 .contact_cta:hover {
-    border: 3px solid #f26146;
-    width: 282px;
     display: flex;
-    justify-content: center;
+    text-align: center;
+    border: 1px solid #f26146;
+    margin: 0 auto;
+    max-width: 28.8%;
     background: #fff;
     color: #f26146;
     border-radius: 100px;
     padding: 20px 30px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    box-sizing: border-box;
 }
-
+.contact_cta {
+    display: flex;
+    text-align: center;
+    border: 1px solid #f26146;
+    max-width: 28.8%;
+    margin: 0 auto;
+    background: #f26146;
+    color: #fff;
+    border-radius: 100px;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
 /* footer */
 .footer {
     max-width: 1000px;
@@ -423,9 +470,6 @@ h3 {
     .work_overview {
         margin-left: 45px;
     }
-    .text_detail {
-        padding: 15px 40px 120px 40px;
-    }
     .important_work,
     .importent {
         font-size: 1.4vw;
@@ -442,6 +486,10 @@ h3 {
     }
 }
 @media screen and (max-width: 1050px) {
+    .logo_wrap {
+        text-align: center;
+    }
+
     /* main visual */
     .logo_img img {
         width: 150px;
@@ -525,7 +573,6 @@ h3 {
     }
     .text_detail {
         max-width: 750px;
-        padding: 15px 0 120px 35px;
     }
 }
 @media screen and (max-width: 978px) {
@@ -545,7 +592,6 @@ h3 {
     }
     .text_detail {
         max-width: 680px;
-        padding: 15px 0 120px 26px;
     }
 }
 @media screen and (max-width: 950px) {
@@ -574,8 +620,7 @@ h3 {
         max-width: 650px;
     }
     .text_detail {
-        max-width: 650px;
-        padding: 15px 0 120px 26px;
+        max-width: 630px;
     }
     .capture_bottom {
         max-width: 590px;
@@ -586,16 +631,13 @@ h3 {
     }
 }
 @media screen and (max-width: 830px) {
-    /* work detail */
-    h2 {
-        max-width: 650px;
-        padding: 0 0 5px 20px;
-        position: relative;
-        z-index: 2;
+    .logo_wrap img {
+        width: 114px;
     }
+    /* work detail */
+    h2,
+    .text_detail,
     h3 {
-        max-width: 650px;
-        padding: 90px 0 5px 20px;
         position: relative;
         z-index: 2;
     }
@@ -609,15 +651,6 @@ h3 {
         position: relative;
         z-index: 2;
     }
-    .text_detail {
-        max-width: 620px;
-        padding: 15px 0 120px 26px;
-        position: relative;
-        z-index: 2;
-    }
-    h3 {
-        padding: 70px 0 5px 20px;
-    }
     .sub {
         padding-left: 3px;
     }
@@ -627,6 +660,11 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
+    /* view page */
+    .logo_img {
+        margin-top: 8px;
+    }
+    /* //// */
     .logo_img img {
         max-width: 121px;
         margin-bottom: 18px;
@@ -644,16 +682,11 @@ h3 {
         z-index: 3;
     }
     /* work detail */
+    .text_detail {
+        width: 80%;
+    }
     .work_overview {
         margin-left: 0;
-    }
-    h2 {
-        max-width: 600px;
-        padding: 0 10px 5px 20px;
-    }
-    h3 {
-        max-width: 600px;
-        padding: 90px 10px 5px 20px;
     }
     .request_text {
         font-size: 24px;
@@ -665,13 +698,6 @@ h3 {
     }
     .overview_wrap dt {
         padding: 15px 10px 15px 30px;
-    }
-    .overview_wrap dl {
-        max-width: 570px;
-    }
-    .text_detail {
-        max-width: 570px;
-        padding: 15px 25px 120px 26px;
     }
     .capture_bottom {
         max-width: 500px;
