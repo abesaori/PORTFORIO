@@ -314,7 +314,7 @@ img {
     background: #f26146;
     color: #fff;
     border-radius: 100px;
-    padding: 15px 50px;
+    padding: 15px 55px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: bold;
@@ -322,7 +322,7 @@ img {
     position: relative;
     z-index: 11;
 }
-#post_btn:hover {
+.post_btn:hover {
     border: 1px solid #f26146;
     width: 282px;
     display: flex;
@@ -331,11 +331,13 @@ img {
     background: #fff;
     color: #f26146;
     border-radius: 100px;
-    padding: 15px 50px;
+    padding: 15px 55px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: bold;
     margin-top: 50px;
+    position: relative;
+    z-index: 11;
 }
 
 /* footer */
@@ -452,8 +454,8 @@ img {
         padding: 10px 20px;
     }
     .insta_wrap {
-        margin: 0 20px 20px 20px;
-        max-width: 100%;
+        width: 90%;
+        max-width: 670px;
     }
     .puestion {
         max-width: 670px;
@@ -463,8 +465,20 @@ img {
         padding: 0 20px;
     }
     .post_btn {
-        padding-bottom: 10px;
+        max-width: 670px;
+        width: 70%;
+        font-size: 4.2vw;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
     }
+    .post_btn:hover {
+        max-width: 670px;
+        width: 70%;
+        font-size: 4.2vw;
+        text-align: center;
+    }
+
     .form_text {
         font-size: 16px;
     }

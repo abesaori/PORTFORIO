@@ -54,7 +54,7 @@ img {
     display: block;
     position: fixed;
     right: 51px;
-    top: 51px;
+    top: 23px;
     height: 35px;
     cursor: pointer;
     z-index: 999;
@@ -202,10 +202,15 @@ img {
 
 /* header */
 .logo {
+    max-width: 1000px;
     margin: 0 auto;
-    width: 203px;
-    margin-bottom: 18px;
-    margin-top: 40px;
+    width: 16%;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+.TOP {
+    display: block;
+    text-align: center;
 }
 /* mein visual */
 .top-page {
@@ -219,6 +224,7 @@ img {
     max-width: 1000px;
     margin: 0 auto;
     z-index: 16;
+    box-sizing: border-box;
 }
 .topwrap p {
     color: #007598;
@@ -240,7 +246,7 @@ img {
     display: none;
 }
 .top_img {
-    width: 60%;
+    width: 55%;
     position: relative;
     z-index: 17;
 }
@@ -251,7 +257,8 @@ img {
     left: 0;
     bottom: 0px;
     width: 100%;
-    max-height: 19vh;
+    max-height: 28vh;
+    margin-bottom: -42px;
 }
 .wave-under {
     width: 100%;
@@ -302,7 +309,7 @@ img {
     color: #007598;
 }
 .title {
-    padding-top: 70px;
+    padding-top: 80px;
     font-size: 35px;
 }
 .subtitle {

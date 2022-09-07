@@ -406,7 +406,7 @@ img {
     .logo_img {
         max-width: 121px;
         margin-bottom: 18px;
-        margin-top: 15px;
+        padding-top: 28px;
     }
     .story_left {
         max-width: 500px;

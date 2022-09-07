@@ -13,15 +13,13 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- slick -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Font_awasome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -46,10 +44,18 @@
                     </div>
                 </nav>
                 <!-- top_page -->
-                <h1 class="logo"><a href="#TOP"><img src="image/logo.png" alt="logo"></a></h1>
+                <h1 class="logo"><a href="#TOP" class="TOP"><img src="image/logo.png" alt="logo"></a></h1>
                 <div class="topwrap">
                     <div class="main_wrap">
-                        <p class="main_text">ひとりひとりの、<br>想いにより添う。</p>
+                        <p class="main_text text offs"><span class="effect delay-1">ひ</span><span
+                                class="effect delay-2">と</span><span class="effect delay-3">り</span><span
+                                class="effect delay-4">ひ</span><span class="effect delay-5">と</span><span
+                                class="effect delay-6">り</span><span class="effect delay-7">の</span><span
+                                class="effect delay-8">、</span><br><span class="effect delay-9">想</span><span
+                                class="effect delay-10">い</span><span class="effect delay-11">に</span><span
+                                class="effect delay-12">よ</span><span class="effect delay-13">り</span><span
+                                class="effect delay-14">添</span><span class="effect delay-15">う</span><span
+                                class="effect delay-16">。</span></p>
                         <p class="main_read">
                             人とひととが出会い、<br>想い出を作り上げていくように、<br>ひとつひとつの想いを大事にし、<br>描いている想像を<br class="sp">共に想造したい。<br
                                 class="pc">「みんな一緒」ではなく、<br>ひとりひとりの想いにあったデザインを<br>心掛けています。
@@ -82,7 +88,7 @@
                             <div class="text_wrap_pc">
                                 <p class="text_service">デザイン<span class="text_01">[illustrator・Photoshop・Figma]</span>
                                 </p>
-                                <p class="copy">
+                                <p class="copy offs">
                                     WEBサイトやバナーなどのデザインを、adobeのソフトをメインに製作いたします。お客様の想いや課題を丁寧に伺い、目的やターゲットにあうデザインを提案いたします。ひとつひとつの想いに寄り添い、コンセプトにあう制作をすることを意識しております。
                                 </p>
                             </div>
@@ -270,51 +276,65 @@
                 $('.nav_manu').fadeToggle();
                 $('.hamburger').toggleClass('open');
             });
-            // slider 
-            $('.work_slider').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                dots: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
-                // responsive: [{
-                //     breakpoint: 767,
-                //     settings: {
-                //         slidesToShow: 3,
-                //         slideToScroll: 3,
-                //         centerpadding: '0px'
-                //     }
-                // }]
-            })
-        });
-        const swiper = new Swiper('.work_slider', {
-            centeredSlides: true,
-            loop: true,
-            speed: 500,
-            slidesPerView: 1.5,
-            spaceBetween: 40,
-            autoplay: {
-                delay: 3000,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
+            /*
+スクロール出現
+（「.offs」が付いた要素に対して、表示領域に入ったら「.ons」にクラスを変更する。）
+・判定タイミング：対象がブラウザの下から 30%以上 入ったら実行、画面から出たら戻す
+*/
+            // スクロール出現用関数（.offs ⇄ .ons
+            function scr_ani(scr, offs_max)
+            var window_h = $(window).height(),
+                offs_length = $('.offs').length,
+                ons_length = ('.ons').length;
+            if (offs_length) {
+                var first_item = offs_max - offs_length;
+                for (var i = 0; i < offs_length; i++) {
+                    var data_scr = first_item + i;
+                    var offs = $('.offs[data-scr="' + data_scr + '"]');
+                    var target = offs.offset().top;
+                    var trigger = target - (window_h + scr - window_h * 0.3);
+                    if (trigger < 0) {
+                        offs.removeClass("offs").addClass("ons");
+                    } else {
+                        break;
+                    }
+                }
+            }
+            if (ons_length) {
+                var last_item = ons_length - 1;
+                for (var i = 0; i < ons_length; i++) {
+                    var data_scr = last_item - i;
+                    var ons = $('.ons[data-scr="' + data_scr + '"]');
+                    var target = ons.offset().top;
+                    var trigger = target - (window_h + scr);
+                    if (trigger > 0) {
+                        ons.removeClass("ons").addclass("offs");
+                    } else {
+                        break;
+                    }
+                }
+            }
+            $(function () {
+                // スクロール出現
+                var scr = $(window).scrollTop();
+                // スクロール出現アイテムナンバリング
+                var offs_max = $(".offs").length;
+                for (var i = 0; i < offs_max; i++) {
+                    $(".offs").eq(i).attr("data-scr ,i");
+                } scr_ani(scr, offs_max)
+                //スクロール出現 //
+                scr_ani(scr, offs_max);
+            }); // end scroll
+        }); // end function
 
-                640: {
-                    slidesPerView: 2.5,
-                },
-                768: {
-                    slidesPerView: 2.75,
-                },
-                1080: {
-                    slidesPerView: 3.25,
-                },
-                1280: {
-                    slidesPerView: 3.75,
-                },
-            },
+
+        // slider 
+        $('.work_slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
         });
     </script>
 </body>
