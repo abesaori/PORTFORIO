@@ -246,6 +246,9 @@ img {
 .btn_text {
     font-size: 16px;
 }
+.content_btn:hover {
+    opacity: 0.7;
+}
 
 /* contact_main */
 .wave-top {

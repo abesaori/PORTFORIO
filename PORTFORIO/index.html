@@ -60,6 +60,21 @@
                     </div>
                     <img src="image/topimage.png" alt="TOP画" class="top_img">
                 </div>
+                <!--Waves Container-->
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(244,215,225,0.7)" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(244,215,230,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(244,215,229,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(244,215,229)" />
+                    </g>
+                </svg>
+                <!--Waves end-->
             </div>
             <!-- スクロール -->
             <a href="#" class="scroll">Scroll</a>
@@ -67,7 +82,6 @@
     </header>
     <!-- Service -->
     <section id="SERVICE">
-        <img src="image/pc_wavetop.png" alt="" class="wave-top">
         <div class="backcolor">
             <div class="service">
                 <div class="title_wrap">
@@ -88,7 +102,7 @@
                                 <p class="text_service fadeIn">デザイン<span
                                         class="text_01">[illustrator・Photoshop・Figma]</span>
                                 </p>
-                                <p class="copy box fadeIn">
+                                <p class="copy fadeIn">
                                     WEBサイトやバナーなどのデザインを、adobeのソフトをメインに製作いたします。お客様の想いや課題を丁寧に伺い、目的やターゲットにあうデザインを提案いたします。ひとつひとつの想いに寄り添い、コンセプトにあう制作をすることを意識しております。
                                 </p>
                             </div>
@@ -136,11 +150,11 @@
             <div class="work">
                 <div class="work_wrap">
                     <div class="title_wrap">
-                        <h2 class="title">WORK</h2>
+                        <h2 class="title title_padding">WORK</h2>
                         <p class="subtitle">実績</p>
+                        <span class="work_logo"><img src="image/work.png" alt="" class="work_img"></span>
                     </div>
                 </div>
-                <div class="work_logo"><img src="image/work.png" alt="" class="work_img"></div>
             </div>
             <!-- work_slider -->
             <div class="slider_detail">
@@ -184,7 +198,7 @@
             <div class="aboutme_wrap">
                 <div class="aboutme_pc"><img src="image/aboutme.png" alt=""></div>
                 <div class="about_wrap">
-                    <h2 class="about fadeIn bound"><span>ABOUT ME</span>/</h2>
+                    <h2 class="about fadeIn bound"><span class="deco">“</span>ABOUT ME</h2>
                     <p class="about_sub fadeIn">わたしについて</p>
                     <div class="aboutme_sp"><img src="image/aboutme.png" alt=""></div>
                     <p class="about_text fadeIn">はじめまして、<br class="sp">abe.saoriです。</p>

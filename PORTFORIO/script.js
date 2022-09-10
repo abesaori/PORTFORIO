@@ -37,7 +37,7 @@ $(function () {
             }
           });
         });
-
+    });  
         (function ($){
     $(document).ready(function ($){
         // フェードイン
@@ -53,30 +53,44 @@ $(function () {
         });
     });
 })(jQuery);
+// wave 波の実装
+$('#wave').wavify({
+    height: 60,
+    bones: 3,
+    amplitude: 40,
+    color: '#0bd',
+    speed: .25
+  });
+//   フォーム
+jQuery("#my-form").submit(function (event) {
+	event.preventDefault();
 
+	let baseUrl = "https://docs.google.com/forms/u/0/d/e/1FAIpQLScgWO07XAc3i8Azbg4LG7S5sJ2WJ9qVQd6ThZxsSk4J7t-vrg/formResponse";
+	let name = jQuery("[name=\"entry.119829565\"]").val();
+	let ruby = jQuery("[name=\"entry.762036364\"]").val();
+	let mail = jQuery("[name=\"entry.1549721748\"]").val();
+	let contents = jQuery("[name=\"entry.237673716\"]:checked").val();
+	/* チェックボックスは数分だけ作る */
+	let checks = ["", "", "", ""];
+	let count = 0;
+	jQuery("[name=\"entry.xxxxxxxxx\"]:checked").each(function() {
+		checks[count] = jQuery(this).val();
+		count++;
+	});
+	let select = jQuery("[name=\"entry.xxxxxxxxx\"]").val();
 
-  function randomCharactor(c) {
-    //跳ねさせる要素すべて取得
-    var randomChar = document.getElementsByClassName(c);
-    //for で総当たり
-    for (var i = 0; i < randomChar.length; i++) {
-        //クロージャー
-        (function(i) {
-            //i 番目の要素、テキスト内容、文字列の長さを取得
-            var randomCharI = randomChar[i];
-            var randomCharIText = randomCharI.textContent;
-            var randomCharLength = randomCharIText.length;
-            //何番目の文字を跳ねさせるかをランダムで決める
-            var Num = ~~(Math.random() * randomCharLength);
-            //跳ねさせる文字を span タグで囲む、それ以外の文字と合わせて再び文字列を作る
-            var newRandomChar = randomCharIText.substring(0, Num) + "<span>" + randomCharIText.charAt(Num) + "</span>" + randomCharIText.substring(Num + 1, randomCharLength);
-            randomCharI.innerHTML = newRandomChar;
-            //アニメーションが終わったら再び関数を発火させる
-            document.getElementsByClassName(c)[0].children[0].addEventListener("animationend", function() {
-                randomCharactor(c)
-            }, false)
-        })(i)
-    }
-}
-//クラス名がaboutのクラスを跳ねさせる
-randomCharactor("about");                });    
+	jQuery.ajax({
+			url: baseUrl,
+			data: {
+				"entry.119829565": name,
+				"entry.762036364": ruby,
+				"entry.1549721748": mail,
+				"entry.237673716": contents,
+			},
+			type: "POST",
+			dataType: "xml",
+	}).always((jqXHR, textStatus, errorThrown) => {
+		window.location.href = "thsnks.html";
+	});
+	return false;
+});

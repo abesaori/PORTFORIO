@@ -289,7 +289,7 @@ img {
     padding-top: 50px;
 }
 .fade {
-    color: transparent; /*各テキストにanimationを設定*/
+    color: transparent;
     animation: blur 11s ease-out forwards;
 }
 
@@ -399,16 +399,10 @@ img {
     .topwrap {
         padding-top: 3vh;
     }
-    .wave-top {
-        max-height: 30vh;
-    }
 }
 @media screen and (max-width: 1500px) {
     .topwrap {
         padding-top: 0;
-    }
-    .wave-top {
-        max-height: 30vh;
     }
 }
 @media screen and (max-width: 1130px) {
@@ -538,23 +532,73 @@ img {
 }
 
 /* service */
-.wave-top {
-    position: absolute;
+.waves {
+    position: relative;
     left: 0;
-    bottom: 0px;
+    bottom: 70px;
     width: 100%;
-    max-height: 28vh;
-    margin-bottom: -42px;
+    height: 150vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 26%;
+} /* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
-.wave-under {
-    width: 100%;
-    height: 42vh;
-    margin-top: -145px;
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
 .backcolor {
     background: #f4d7e5;
-    margin-top: -40px;
+    margin-top: 0px;
 }
+/*Shrinking for mobile*/
+@media screen and (max-width: 1000px) {
+    .waves {
+        bottom: 85px;
+        max-height: 220px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .waves {
+        bottom: 64px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .waves {
+        bottom: 48px;
+        max-height: 234px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .waves {
+        bottom: 47px;
+        max-height: 10%;
+    }
+}
+/* service design */
 .service_wrap {
     padding: 0 10px;
     display: flex;
@@ -568,6 +612,7 @@ img {
 .title_wrap {
     opacity: 0;
     transition: opacity 4s;
+    position: relative;
 }
 .title_wrap.view {
     opacity: 1;
@@ -590,7 +635,7 @@ img {
     opacity: 1;
     transform: translate(0, 0);
 }
-/* /////// */
+/* ///////////////////////////////////// */
 .shadow_logo {
     position: absolute;
     top: -108px;
@@ -633,6 +678,14 @@ img {
     line-height: 1.9em;
     margin-top: 20px;
 }
+.viewmore {
+    color: #0bd;
+}
+.viewmore:hover {
+    border: #717070 1px solid;
+    color: rgb(5, 166, 195);
+}
+
 @media screen and (max-width: 767px) {
     .title {
         padding-top: 80px;
@@ -726,10 +779,6 @@ img {
         top: -4%;
         width: 54%;
     }
-    .title_wrap {
-        position: relative;
-        z-index: 13;
-    }
     .title {
         padding-top: 38px;
         font-size: 9.3vw;
@@ -739,26 +788,31 @@ img {
     }
 }
 /* work */
+.wave-under {
+    width: 100%;
+    height: 42vh;
+    margin-top: -117px;
+}
 .back_color {
     background: #f4d7e5;
 }
 .work {
-    display: flex;
-    justify-content: right;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 10px;
-    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+.title_padding {
+    padding-top: 170px;
 }
 .work_logo {
-    max-width: 55%;
-    margin-bottom: 10px;
+    max-width: 1000px;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 @media screen and (max-width: 1035px) {
-    .wave-top {
-        height: 25vh;
-    }
     .woman_text {
         padding: 35px 0 0 50px;
     }
@@ -772,16 +826,15 @@ img {
         position: relative;
     }
     .work_logo {
-        margin-bottom: 0;
-        position: absolute;
-        max-width: 40%;
-        top: 0;
+        width: 40%;
+        bottom: 0;
         right: 55px;
     }
     .view_work {
         padding: 0 10px;
     }
 }
+/* slider */
 .slider {
     max-width: 1366px;
     margin: 0 auto;
@@ -979,23 +1032,22 @@ img {
     padding: 35px 0 52px;
 }
 
-/* ////bound font//// */
-.about span {
-    animation: pyon 0.35s linear;
-    position: relative;
+/* ////bound font-//// */
+.about {
+    animation: key 0.3s ease infinite alternate;
 }
-
-@keyframes pyon {
+@keyframes key {
     0% {
-        top: 0;
-    }
-    50% {
-        top: -17px;
+        transform: translateY(0px);
     }
     100% {
-        top: 0;
+        transform: translateY(-10px);
     }
 }
+.deco {
+    font-size: 60px;
+}
+/* //-bound// */
 .about {
     font-size: 35px;
     font-weight: bold;
