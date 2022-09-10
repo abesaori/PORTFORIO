@@ -13,13 +13,13 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- slick -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Font_awasome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -44,19 +44,16 @@
                     </div>
                 </nav>
                 <!-- top_page -->
-                <h1 class="logo"><a href="#TOP" class="TOP"><img src="image/logo.png" alt="logo"></a></h1>
+                <h1 class="logo"><a href="#TOP" class="TOP"><img src="image/logo.svg" alt="logo"></a></h1>
                 <div class="topwrap">
                     <div class="main_wrap">
-                        <p class="main_text text offs"><span class="effect delay-1">ひ</span><span
-                                class="effect delay-2">と</span><span class="effect delay-3">り</span><span
-                                class="effect delay-4">ひ</span><span class="effect delay-5">と</span><span
-                                class="effect delay-6">り</span><span class="effect delay-7">の</span><span
-                                class="effect delay-8">、</span><br><span class="effect delay-9">想</span><span
-                                class="effect delay-10">い</span><span class="effect delay-11">に</span><span
-                                class="effect delay-12">よ</span><span class="effect delay-13">り</span><span
-                                class="effect delay-14">添</span><span class="effect delay-15">う</span><span
-                                class="effect delay-16">。</span></p>
-                        <p class="main_read">
+                        <p class="main_text"><span class="fade">ひ</span><span class="fade">と</span><span
+                                class="fade">り</span><span class="fade">ひ</span><span class="fade">と</span><span
+                                class="fade">り</span><span class="fade">の</span><span class="fade">、</span><br><span
+                                class="fade">想</span><span class="fade">い</span><span class="fade">に</span><span
+                                class="fade">よ</span><span class="fade">り</span><span class="fade">添</span><span
+                                class="fade">う。</span></p>
+                        <p class="main_read fade_text">
                             人とひととが出会い、<br>想い出を作り上げていくように、<br>ひとつひとつの想いを大事にし、<br>描いている想像を<br class="sp">共に想造したい。<br
                                 class="pc">「みんな一緒」ではなく、<br>ひとりひとりの想いにあったデザインを<br>心掛けています。
                         </p>
@@ -73,8 +70,10 @@
         <img src="image/pc_wavetop.png" alt="" class="wave-top">
         <div class="backcolor">
             <div class="service">
-                <h2 class="title">SERVICE</h2>
-                <p class="subtitle">わたしができること</p>
+                <div class="title_wrap">
+                    <h2 class="title">SERVICE</h2>
+                    <p class="subtitle">わたしができること</p>
+                </div>
                 <div class="service_wrap">
                     <picture class="shadow_logo">
                         <source srcset="image/service_sp.png" media="(max-width: 767px)">
@@ -82,45 +81,46 @@
                     </picture>
                     <div class="service_detailwrap">
                         <div class="service_detail detail_speace">
-                            <div class="service_img">
-                                <img src="image/design.png" alt="design_image">
+                            <div class="service_img fadeIn">
+                                <img src="image/design.png" alt="design_image" class="service_pic">
                             </div>
                             <div class="text_wrap_pc">
-                                <p class="text_service">デザイン<span class="text_01">[illustrator・Photoshop・Figma]</span>
+                                <p class="text_service fadeIn">デザイン<span
+                                        class="text_01">[illustrator・Photoshop・Figma]</span>
                                 </p>
-                                <p class="copy offs">
+                                <p class="copy box fadeIn">
                                     WEBサイトやバナーなどのデザインを、adobeのソフトをメインに製作いたします。お客様の想いや課題を丁寧に伺い、目的やターゲットにあうデザインを提案いたします。ひとつひとつの想いに寄り添い、コンセプトにあう制作をすることを意識しております。
                                 </p>
                             </div>
-                            <div class="text_wrap_sp">
+                            <div class="text_wrap_sp fadeIn">
                                 <div class="text_service">デザイン
                                     <div class="text_01">[illustrator・Photoshop・Figma]</div>
                                 </div>
                             </div>
                         </div>
                         <div class="text_wrap_sp">
-                            <p class="copy">
+                            <p class="copy fadeIn">
                                 WEBサイトやバナーなどのデザインを、adobeのソフトをメインに製作いたします。お客様の想いや課題を丁寧に伺い、目的やターゲットにあうデザインを提案いたします。ひとつひとつの想いに寄り添い、コンセプトにあう制作をすることを意識しております。
                             </p>
                         </div>
                         <div class="service_detail detail_clum">
-                            <div class="service_img">
-                                <img src="image/cording.png" alt="cording_image">
+                            <div class="service_img fadeIn">
+                                <img src="image/cording.png" alt="cording_image" class="service_pic">
                             </div>
-                            <div class="text_wrap_pc">
+                            <div class="text_wrap_pc fadeIn">
                                 <p class="text_service">コーディング<span class="text_01">[HTML・CSS・JavaScript]</span>
                                 </p>
-                                <p class="copy">
+                                <p class="copy fadeIn">
                                     HTML・CSSを用いてコーディングを行います。JavaScriptを使用し、動きをつけることや、レスポンシブにも対応しております。デザインに込められた想いをサイト上に表現するために、適切な効果や動きをつけることや綺麗なコードを書くことを意識しております。
                                 </p>
                             </div>
-                            <div class="text_wrap_sp">
+                            <div class="text_wrap_sp fadeIn">
                                 <div class="text_service">コーディング
                                     <div class="text_01">[HTML・CSS・JavaScript]</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="text_wrap_sp">
+                        <div class="text_wrap_sp fadeIn">
                             <p class="copy">
                                 HTML・CSSを用いてコーディングを行います。JavaScriptを使用し、動きをつけることや、レスポンシブにも対応しております。デザインに込められた想いをサイト上に表現するために、適切な効果や動きをつけることや綺麗なコードを書くことを意識しております。
                             </p>
@@ -135,8 +135,10 @@
         <div class="back_color">
             <div class="work">
                 <div class="work_wrap">
-                    <h2 class="title">WORK</h2>
-                    <p class="subtitle">実績</p>
+                    <div class="title_wrap">
+                        <h2 class="title">WORK</h2>
+                        <p class="subtitle">実績</p>
+                    </div>
                 </div>
                 <div class="work_logo"><img src="image/work.png" alt="" class="work_img"></div>
             </div>
@@ -144,12 +146,17 @@
             <div class="slider_detail">
                 <ul class="work_slider">
                     <!-- リンクを入れる -->
-                    <li><a href="work_cosme.html"><img src="image/cosme_slider.png" alt="cosme"></a></li>
-                    <li><a href="work_camp.html"><img src="image/outdoor_slider.png" alt="outdoor"></a></li>
-                    <li><a href="work_school.html"><img src="image/school_slider.png" alt="school"></a></li>
-                    <li><a href="work_lp.html"><img src="image/company_slider.png" alt="company"></a></li>
-                    <li><a href="work_salon.html"><img src="image/salon_slider.png" alt="salon"></a></li>
-                    <li><a href="work_cafe.html"><img src="image/cafe_slider.png" alt="cafe"></a></li>
+                    <li><a href="work_cosme.html" class="work_pic"><img src="image/cosme_slider.png" alt="cosme"></a>
+                    </li>
+                    <li><a href="work_camp.html" class="work_pic"><img src="image/outdoor_slider.png" alt="outdoor"></a>
+                    </li>
+                    <li><a href="work_school.html" class="work_pic"><img src="image/school_slider.png" alt="school"></a>
+                    </li>
+                    <li><a href="work_lp.html" class="work_pic"><img src="image/company_slider.png" alt="company"></a>
+                    </li>
+                    <li><a href="work_salon.html" class="work_pic"><img src="image/salon_slider.png" alt="salon"></a>
+                    </li>
+                    <li><a href="work_cafe.html" class="work_pic"><img src="image/cafe_slider.png" alt="cafe"></a></li>
                 </ul>
             </div>
             <div class="viewmore_work">
@@ -160,9 +167,10 @@
 
         <div class="be_oneself">
             <div class="oneself_wrap">
-                <img src="image/beoneself.png" alt="" class="oneself_img">
+                <img src="image/beoneself.png" alt="" class="oneself_img fadeIn_time">
                 <ul class="woman_wrap">
-                    <li class="woman_text">あなたらしさを<br class="pc">表現する<br class="sp">お手伝いを<br class="pc">させてください。
+                    <li class="woman_text fadeIn_time">あなたらしさを<br class="pc">表現する<br class="sp">お手伝いを<br
+                            class="pc">させてください。
                     </li>
                     <li class="woman_conteiner"><img src="image/woman_oneself.png" alt="" class="woman_pic"></li>
                 </ul>
@@ -176,11 +184,11 @@
             <div class="aboutme_wrap">
                 <div class="aboutme_pc"><img src="image/aboutme.png" alt=""></div>
                 <div class="about_wrap">
-                    <h2 class="about">ABOUT ME</h2>
-                    <p class="about_sub">わたしについて</p>
+                    <h2 class="about fadeIn bound"><span>ABOUT ME</span>/</h2>
+                    <p class="about_sub fadeIn">わたしについて</p>
                     <div class="aboutme_sp"><img src="image/aboutme.png" alt=""></div>
-                    <p class="about_text">はじめまして、<br class="sp">abe.saoriです。</p>
-                    <p class="about_subtext">山形県出身｜東京都在住。
+                    <p class="about_text fadeIn">はじめまして、<br class="sp">abe.saoriです。</p>
+                    <p class="about_subtext fadeIn">山形県出身｜東京都在住。
                         <span class="wrap"><br>おしゃべりすることが大好きです。楽しく、元気に、
                             <br class="wrap pc">やるときは真剣にDesignのお仕事に取り組んでいます。</span>
                     </p>
@@ -193,44 +201,44 @@
     </section>
     <!-- Q&A -->
     <section id="QandA">
-        <div class="QandA_wrap">
+        <div class="title_wrap QandA_wrap">
             <h2 class="title">Q&A</h2>
             <p class="subtitle QandA_sub">よくあるご質問</p>
         </div>
         <div class="QandA_wrap">
             <div class="QandA_detail">
                 <details>
-                    <summary class="QandA_conteiner"><img src="image/Q_img.jpg" alt="" class="Q_img">
-                        <span class="Q_text">料金はどのくらいかかりますか？</span>
+                    <summary class="QandA_conteiner fadeIn"><img src="image/Q_img.jpg" alt="" class="Q_img">
+                        <span class="Q_text fadeIn">料金はどのくらいかかりますか？</span>
                     </summary>
                     <p class="a_text">
                         ご相談・お見積りの提示は無料で対応しております。<br>制作物は内容により金額が異なります。<br>“実績”に作成した作品の制作費用を記載しておりますので<br>参考にしてください。
                     </p>
                 </details>
                 <details>
-                    <summary class="QandA_conteiner"><img src="image/Q_img.jpg" alt="" class="Q_img">
-                        <span class="Q_text">納期はどれくらいですか？</span>
+                    <summary class="QandA_conteiner fadeIn"><img src="image/Q_img.jpg" alt="" class="Q_img">
+                        <span class="Q_text fadeIn">納期はどれくらいですか？</span>
                     </summary>
-                    <p class="a_text">バナーやサイト制作など、ご依頼の内容により異なります。<br>“実績”に作成した作品の制作期間を記載しております<br
+                    <p class="a_text ">バナーやサイト制作など、ご依頼の内容により異なります。<br>“実績”に作成した作品の制作期間を記載しております<br
                             class="sp">ので参考にしてください。</p>
                 </details>
                 <details>
-                    <summary class="QandA_conteiner"><img src="image/Q_img.jpg" alt="" class="Q_img">
-                        <span class="Q_text">デザインの希望はどのように伝えればいいでしょうか？</span>
+                    <summary class="QandA_conteiner fadeIn"><img src="image/Q_img.jpg" alt="" class="Q_img">
+                        <span class="Q_text fadeIn">デザインの希望はどのように伝えればいいでしょうか？</span>
                     </summary>
                     <p class="a_text">
                         打ち合わせの時にお客様の想いをヒアリングさせていただきます。<br>まずは「すっきりシンプルに」「元気いっぱいでPOPなイメージ」<br>「落ち着きがあり大人っぽい感じ」などイメージのみでも大丈夫です。<br>詳しくお話を伺い、ひとつひとつの想いを具体化していきます。
                     </p>
                 </details>
                 <details>
-                    <summary class="QandA_conteiner"><img src="image/Q_img.jpg" alt="" class="Q_img">
-                        <span class="Q_text">デザインのみ、コーディングのみの依頼も可能ですか？</span>
+                    <summary class="QandA_conteiner fadeIn"><img src="image/Q_img.jpg" alt="" class="Q_img">
+                        <span class="Q_text fadeIn">デザインのみ、コーディングのみの依頼も可能ですか？</span>
                     </summary>
                     <p class="a_text">もちろん可能です。全国各地どの地域からでも承ります。</p>
                 </details>
                 <details>
-                    <summary class="QandA_conteiner"><img src="image/Q_img.jpg" alt="" class="Q_img">
-                        <span class="Q_text">遠方からでも制作の依頼は可能ですか？</span>
+                    <summary class="QandA_conteiner fadeIn"><img src="image/Q_img.jpg" alt="" class="Q_img">
+                        <span class="Q_text fadeIn">遠方からでも制作の依頼は可能ですか？</span>
                     </summary>
                     <p class="a_text">もちろん可能です。全国各地どの地域からでも承ります。</p>
                 </details>
@@ -242,17 +250,19 @@
         <img src="image/contact_top.png" alt="" class="contact_wave">
         <div class="back_color">
             <div class="contact">
-                <h2 class="title title_topline">CONTACT</h2>
-                <p class="subtitle">お問い合わせ</p>
+                <div class="title_wrap">
+                    <h2 class="title title_topline">CONTACT</h2>
+                    <p class="subtitle">お問い合わせ</p>
+                </div>
                 <div class="contact_detail">
-                    <p class="request_text">ご相談・ご依頼<br class="sp">お待ちしております。</p>
-                    <p class="request_sub">
+                    <p class="request_text fadeIn_time">ご相談・ご依頼<br class="sp">お待ちしております。</p>
+                    <p class="request_sub fadeIn_time">
                         まずは、あなたの想いを聴かせてください。<br class="sp">無料ご相談・お見積もりいたします。<br><span
                             class="pc">ご相談・ご依頼は下記の「お問合わせフォーム」からご連絡ください。</span>
                     </p>
-                    <p class="sp sp_formtext">
+                    <p class="sp sp_formtext fadeIn_time">
                         ご相談・ご依頼は下記の「お問合わせフォーム」からご連絡ください。※セールスなどのお問い合わせ、ご相談はご返信できかねますので、ご遠慮ください。</p>
-                    <p class="importent pc">※セールスなどのお問い合わせ、ご相談はご返信できかねますので、ご遠慮ください。</p>
+                    <p class="importent pc fadeIn_time">※セールスなどのお問い合わせ、ご相談はご返信できかねますので、ご遠慮ください。</p>
                 </div>
                 <div class="viewmore_contact">
                     <a href="contact.html" class="viewmore_cta">お問合わせフォームはこちら</a>
@@ -261,82 +271,13 @@
         </div>
         <img src="image/contact_under.png" alt="" class="contactunder_wave">
     </section>
-    <!-- top-btn -->
-    <div class="top_btn"><a href="#top" class="pageup"><img src="image/pageup.jpg" alt="" class="topup"></a></div>
-
     <footer>
+        <!-- top-btn -->
+        <a href="#TOP" id="page-top" class="btn_footer">TOP</a>
         <div class="footer">
             <p><small>&copy; abe.saori DESIGN..</small></p>
         </div>
     </footer>
-    <script>
-        $(function () {
-            //ハンバーガーメニュー
-            $('.hamburger,.nav_manu li').click(function () {
-                $('.nav_manu').fadeToggle();
-                $('.hamburger').toggleClass('open');
-            });
-            /*
-スクロール出現
-（「.offs」が付いた要素に対して、表示領域に入ったら「.ons」にクラスを変更する。）
-・判定タイミング：対象がブラウザの下から 30%以上 入ったら実行、画面から出たら戻す
-*/
-            // スクロール出現用関数（.offs ⇄ .ons
-            function scr_ani(scr, offs_max)
-            var window_h = $(window).height(),
-                offs_length = $('.offs').length,
-                ons_length = ('.ons').length;
-            if (offs_length) {
-                var first_item = offs_max - offs_length;
-                for (var i = 0; i < offs_length; i++) {
-                    var data_scr = first_item + i;
-                    var offs = $('.offs[data-scr="' + data_scr + '"]');
-                    var target = offs.offset().top;
-                    var trigger = target - (window_h + scr - window_h * 0.3);
-                    if (trigger < 0) {
-                        offs.removeClass("offs").addClass("ons");
-                    } else {
-                        break;
-                    }
-                }
-            }
-            if (ons_length) {
-                var last_item = ons_length - 1;
-                for (var i = 0; i < ons_length; i++) {
-                    var data_scr = last_item - i;
-                    var ons = $('.ons[data-scr="' + data_scr + '"]');
-                    var target = ons.offset().top;
-                    var trigger = target - (window_h + scr);
-                    if (trigger > 0) {
-                        ons.removeClass("ons").addclass("offs");
-                    } else {
-                        break;
-                    }
-                }
-            }
-            $(function () {
-                // スクロール出現
-                var scr = $(window).scrollTop();
-                // スクロール出現アイテムナンバリング
-                var offs_max = $(".offs").length;
-                for (var i = 0; i < offs_max; i++) {
-                    $(".offs").eq(i).attr("data-scr ,i");
-                } scr_ani(scr, offs_max)
-                //スクロール出現 //
-                scr_ani(scr, offs_max);
-            }); // end scroll
-        }); // end function
-
-
-        // slider 
-        $('.work_slider').slick({
-            autoplay: true,
-            autoplaySpeed: 3000,
-            dots: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
-        });
-    </script>
 </body>
 
 </html>

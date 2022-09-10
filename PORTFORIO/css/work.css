@@ -146,6 +146,12 @@ img {
     padding-left: 14px;
 }
 /* view more pege! */
+.logo_img {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 21%;
+    padding-left: 10px;
+}
 .logo_img a {
     display: block;
 }
@@ -666,9 +672,9 @@ h3 {
     }
     /* //// */
     .logo_img img {
-        max-width: 121px;
+        max-width: 767px;
+        width: 150px;
         margin-bottom: 18px;
-        margin-top: 15px;
         position: relative;
         z-index: 4;
     }
