@@ -744,6 +744,7 @@ h3 {
     }
     .importent {
         line-height: 1.8em;
+        padding: 0 10px;
     }
     .request_text {
         font-size: 21px;
