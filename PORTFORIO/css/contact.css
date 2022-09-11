@@ -431,9 +431,6 @@ img {
     .puestion {
         max-width: 700px;
     }
-    .pc {
-        display: none;
-    }
 }
 @media screen and (max-width: 860px) {
     /* hambuger menu */
@@ -452,10 +449,12 @@ img {
     .info_text {
         max-width: 670px;
         padding: 0 20px 5px 20px;
+        font-size: 16px;
     }
     .wrap_wrap {
         max-width: 670px;
         padding: 10px 20px;
+        font-size: 16px;
     }
     .insta_wrap {
         width: 90%;

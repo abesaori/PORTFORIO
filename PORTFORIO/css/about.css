@@ -566,7 +566,71 @@ img {
         max-width: 300px;
         margin-right: 52px;
     }
+    .contact_cta,
+    .contact_cta:hover {
+        width: 33%;
+    }
     .icon {
-        padding-left: 13px;
+        padding-left: 12px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .title {
+        font-size: 21px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    .myself {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .myself_text {
+        font-size: 14px;
+    }
+    .about_pic {
+        width: 55%;
+        padding-left: 10px;
+    }
+    .story_left p,
+    .story_right p {
+        font-size: 14px;
+        line-height: 1.55em;
+    }
+    .strong {
+        font-size: 14.5px;
+    }
+    .story_left {
+        margin-left: 20px;
+    }
+    .story_right {
+        margin-left: 122px;
+    }
+    .text_number01 {
+        top: 32px;
+        left: 33%;
+    }
+    .text_number02 {
+        right: 34%;
+        top: -6%;
+    }
+    .text_number03 {
+        left: 77%;
+    }
+    .text_number04 {
+        top: 20%;
+        right: 6%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .about_detail {
+        padding: 0 10px 0 10px;
+    }
+    .about_pic {
+        margin-top: 10px;
+    }
+    .contact_cta,
+    .contact_cta:hover {
+        width: 35%;
     }
 }
