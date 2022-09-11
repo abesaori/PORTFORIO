@@ -173,6 +173,7 @@ img {
     font-weight: 500;
 }
 .home_back_btn {
+    width: 230px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -225,14 +226,17 @@ img {
     }
     .nav-top {
         max-width: 767px;
-        font-size: 3.3vw;
+        font-size: 30px;
         padding-top: 25px;
         margin-bottom: 50px;
     }
     .nav_wrap li {
         max-width: 767px;
-        font-size: 2.4vw;
+        font-size: 20px;
         padding: 40px 0 20px 20px;
+    }
+    .nav_wrap span {
+        font-size: 16px;
     }
     .scroll {
         bottom: 0;
@@ -415,16 +419,17 @@ h3 {
     font-size: 18px;
     font-weight: bold;
     width: 32%;
-    padding: 15px 0 15px 45px;
+    padding: 15px 15px 15px 45px;
     box-sizing: border-box;
     border-bottom: #1e1e1e 1px solid;
 }
 .overview_wrap dd {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: lighter;
     width: 68%;
     border-bottom: #1e1e1e 1px solid;
-    padding: 15px 0;
+    padding: 15px 10px;
+    box-sizing: border-box;
 }
 .important_work {
     padding-left: 50px;
@@ -483,9 +488,9 @@ h3 {
 }
 /* home_back */
 .home_back {
+    width: 230px;
     margin: 0 auto;
     border: 1px solid rgba(45, 45, 45, 0.5);
-    max-width: 230px;
     border-radius: 100px;
     padding: 17px 20px;
     font-size: 20px;
@@ -494,10 +499,10 @@ h3 {
     text-align: center;
 }
 .home_back:hover {
+    width: 230px;
     display: block;
     font-size: 20px;
     opacity: 0.7;
-    max-width: 230px;
     border-radius: 100px;
     padding: 17px 20px;
 }
@@ -512,16 +517,8 @@ h3 {
 }
 @media screen and (max-width: 1125px) {
     /* work detail */
-    h2,
-    h3 {
-        font-size: 2.3vw;
-    }
     .work_overview {
         margin-left: 45px;
-    }
-    .important_work,
-    .importent {
-        font-size: 1.4vw;
     }
     .capture_bottom {
         max-width: 800px;
@@ -539,34 +536,19 @@ h3 {
     .overview_wrap dl {
         max-width: 750px;
     }
+    .overview_wrap dt {
+        padding: 15px 15px 15px 25px;
+    }
     .text_detail {
         max-width: 750px;
     }
 }
-@media screen and (max-width: 978px) {
-    h2 {
-        max-width: 730px;
-        padding: 0 0 5px 20px;
-    }
-    h3 {
-        max-width: 730px;
-        padding: 90px 0 5px 20px;
-    }
-    .overview_wrap dl {
-        max-width: 680px;
-    }
-    .text_detail {
-        max-width: 680px;
-    }
-}
 @media screen and (max-width: 950px) {
     h2 {
-        font-size: 2.3vw;
         max-width: 700px;
         padding: 0 0 5px 20px;
     }
     h3 {
-        font-size: 2.3vw;
         max-width: 700px;
         padding: 90px 0 5px 20px;
     }
@@ -611,7 +593,6 @@ h3 {
         margin-top: 0;
     }
     .work_pic {
-        max-width: 60%;
         position: relative;
         z-index: 3;
     }
@@ -623,7 +604,15 @@ h3 {
         display: flex;
         justify-content: space-between;
     }
-
+    .overview_wrap dt {
+        font-size: 16px;
+    }
+    .overview_wrap dd {
+        font-size: 16px;
+    }
+    .text {
+        font-size: 16px;
+    }
     .text_detail {
         width: 80%;
     }
@@ -634,12 +623,8 @@ h3 {
         font-size: 24px;
     }
     .important_work {
-        display: inline-block;
         padding: 0 10px 0 30px;
         box-sizing: border-box;
-    }
-    .overview_wrap dt {
-        padding: 15px 10px 15px 25px;
     }
     .capture_bottom {
         max-width: 500px;
@@ -649,14 +634,26 @@ h3 {
     .lp_pc {
         width: 70%;
     }
-    .capture_pic {
-        width: 500px;
-    }
     .salon_pic {
-        max-width: 75%;
-        padding: 0 10px 0 70px;
+        max-width: 68%;
         position: relative;
         z-index: 2;
+    }
+}
+@media screen and (max-width: 550px) {
+    .important_work {
+        display: block;
+        padding: 8px 10px 8px 0;
+    }
+}
+@media screen and (max-width: 440px) {
+    .overview_wrap dt {
+        width: 35%;
+        padding: 15px 0 15px 10px;
+    }
+    .overview_wrap dd {
+        width: 65%;
+        padding: 15px 0px;
     }
 }
 @media screen and (max-width: 360px) {
@@ -668,12 +665,14 @@ h3 {
 .contact_wrap {
     width: 100%;
     text-align: center;
-    padding: 0 10px;
     box-sizing: border-box;
     background: #fff;
     border-top: 1px rgba(45, 45, 45, 0.3) solid;
     position: relative;
     z-index: 3;
+}
+.turn {
+    display: none;
 }
 .request_text {
     font-size: 30px;
@@ -683,6 +682,11 @@ h3 {
 .request_sub {
     font-size: 20px;
     line-height: 1.75em;
+    width: 95%;
+    margin: 0 auto;
+}
+.turn {
+    display: none;
 }
 .importent {
     font-size: 15px;
@@ -698,11 +702,10 @@ h3 {
     text-align: center;
     border: 1px solid #f26146;
     margin: 0 auto;
-    width: 32%;
     background: #fff;
     color: #f26146;
     border-radius: 100px;
-    padding: 20px 10px;
+    padding: 20px 27px;
     font-size: 18px;
     font-weight: bold;
     box-sizing: border-box;
@@ -711,12 +714,11 @@ h3 {
     display: flex;
     justify-content: center;
     border: 1px solid #f26146;
-    width: 32%;
     margin: 0 auto;
     background: #f26146;
     color: #fff;
     border-radius: 100px;
-    padding: 20px 10px;
+    padding: 20px 27px;
     font-size: 18px;
     font-weight: bold;
     box-sizing: border-box;
@@ -728,26 +730,26 @@ h3 {
     }
 }
 @media screen and (max-width: 880px) {
-    .contact_cta:hover {
-        width: 38%;
-        padding: 21px 10px;
-    }
-    .contact_cta {
-        width: 38%;
-        padding: 21px 10px;
+    .request_sub {
+        font-size: 18px;
     }
 }
-@media screen and (max-width: 770px) {
-    .contact_cta:hover {
-        width: 305px;
-        padding: 21px 10px;
+@media screen and (max-width: 660px) {
+    .block {
+        display: none;
     }
-    .contact_cta {
-        width: 305px;
-        padding: 21px 10px;
+    .turn {
+        display: block;
+    }
+    .importent {
+        line-height: 1.8em;
     }
 }
-
+@media screen and (max-width: 495px) {
+    .request_sub {
+        font-size: 16px;
+    }
+}
 /* footer */
 .footer {
     max-width: 1000px;
@@ -771,6 +773,7 @@ h3 {
     font-weight: 500;
 }
 .home_back_btn {
+    width: 230px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;

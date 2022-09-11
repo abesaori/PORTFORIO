@@ -167,7 +167,6 @@ img {
 .about_pic {
     position: relative;
     z-index: 7;
-    width: 600px;
 }
 .me_pic {
     border-radius: 10px;
@@ -195,7 +194,7 @@ img {
     font-weight: bold;
 }
 .myself {
-    margin-top: 50px;
+    margin-top: 82px;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -340,26 +339,25 @@ img {
         margin-left: 270px;
     }
     .story_left p {
-        font-size: 1.7vw;
+        font-size: 16px;
     }
     .story_right p {
-        font-size: 1.7vw;
+        font-size: 16px;
     }
     .strong {
-        font-size: 1.8vw;
+        font-size: 16.5px;
     }
     .about_pic {
-        width: 560px;
         padding-left: 40px;
     }
     .title {
         font-size: 30px;
     }
     .myself {
-        font-size: 20px;
+        font-size: 28px;
     }
     .myself_text {
-        font-size: 18px;
+        font-size: 19px;
     }
 }
 @media screen and (max-width: 1060px) {
@@ -409,14 +407,16 @@ img {
     }
     .nav-top {
         max-width: 767px;
-        font-size: 3.3vw;
-        padding-top: 25px;
-        margin-bottom: 50px;
+        font-size: 30px;
+        margin-bottom: 38px;
     }
     .nav_wrap li {
         max-width: 767px;
-        font-size: 2.4vw;
+        font-size: 20px;
         padding: 40px 0 20px 20px;
+    }
+    .nav_wrap span {
+        font-size: 16px;
     }
     .scroll {
         bottom: 0;
@@ -437,13 +437,10 @@ img {
     .about_detail {
         padding: 0 20px 0 60px;
     }
-    .myself {
-        margin-top: 23px;
-    }
     .story_wrap,
     .story_wrap_right {
         margin-top: 85px;
-        padding-right: 10px;
+        margin-right: 20px;
     }
     .text_number01,
     .text_number02,
@@ -465,17 +462,8 @@ img {
     }
 }
 @media screen and (max-width: 870px) {
-    .about_pic {
-        width: 450px;
-    }
-    .title {
-        font-size: 25px;
-    }
     .myself {
-        font-size: 18px;
-    }
-    .myself_text {
-        font-size: 16px;
+        font-size: 26px;
     }
     .about_detail {
         padding: 0 10px 0 40px;
@@ -483,7 +471,7 @@ img {
 }
 @media screen and (max-width: 850px) {
     .story_right {
-        margin-left: 280px;
+        margin-left: 322px;
     }
     .story_wrap_right {
         margin-top: 40px;
@@ -491,35 +479,21 @@ img {
     .contact_cta {
         max-width: 767px;
         margin: 0 auto;
-        width: 23%;
-        font-size: 2.8vw;
+        width: 24%;
+        font-size: 16px;
     }
     .contact_cta:hover {
         max-width: 767px;
         margin: 0 auto;
-        width: 23%;
+        width: 24%;
         font-size: 16px;
-    }
-    .myself_text {
-        font-size: 1.9vw;
-        line-height: 1.7em;
-    }
-}
-@media screen and (max-width: 870px) {
-    .about_pic {
-        width: 400px;
-    }
-    .title {
-        font-size: 20px;
     }
     .myself {
-        font-size: 16px;
+        margin-top: 65px;
+        font-size: 22px;
     }
     .myself_text {
-        font-size: 14px;
-    }
-    .about_detail {
-        padding: 0 10px 0 40px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 798px) {
@@ -534,45 +508,63 @@ img {
         max-width: 400px;
     }
 }
-
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 767px) {
+    .about_pic {
+        width: 54%;
+    }
+    .title {
+        margin-top: 0;
+    }
+    .myself {
+        margin-top: 40px;
+    }
+    .story_right {
+        margin-left: 296px;
+    }
+}
+@media screen and (max-width: 716px) {
+    .text_number01 {
+        top: -25px;
+        left: 18%;
+    }
+    .text_number03 {
+        top: 17%;
+        left: 46%;
+    }
+    .text_number04 {
+        top: 14%;
+    }
     .story_wrap,
     .story_wrap_right {
         margin-top: 45px;
     }
     .story_left {
         max-width: 300px;
-        margin-right: 100px;
+        margin-left: 50px;
     }
     .myself {
-        font-size: 2.1vw;
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 1.3em;
     }
     .myself_text {
-        font-size: 2vw;
+        line-height: 1.3em;
+        font-size: 15px;
     }
     .about_detail {
-        padding: 0 10px 0 10px;
+        padding: 0 10px 0 26px;
     }
-    .about_pic {
-        width: 60%;
-        padding-left: 10px;
+    .title {
+        font-size: 26px;
     }
 }
 @media screen and (max-width: 550px) {
     .story_right {
-        margin-left: 125px;
-        margin-right: 10px;
+        margin-left: 198px;
     }
     .story_left {
         max-width: 300px;
         margin-right: 52px;
-        margin-left: 28px;
-    }
-    .title {
-        font-size: 2.4vw;
-    }
-    .about_pic {
-        width: 50%;
     }
     .icon {
         padding-left: 13px;

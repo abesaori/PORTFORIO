@@ -207,6 +207,7 @@ img {
     -webkit-text-fill-color: transparent;
 }
 .insta_left {
+    font-size: 18px;
     margin-left: 20px;
     font-weight: bold;
 }
@@ -218,7 +219,7 @@ img {
     display: flex;
     justify-content: left;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     z-index: 4;
 }
@@ -278,10 +279,10 @@ img {
 .form_text {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-left: 5px;
 }
 .contactform p {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .must {
     border: 1px #007598 solid;
@@ -311,32 +312,30 @@ img {
 .post_btn {
     border: 1px solid #f26146;
     display: flex;
-    max-width: 800px;
-    width: 50%;
     margin: 0 auto;
     background: #f26146;
     color: #fff;
     border-radius: 100px;
-    padding: 15px 55px;
+    padding: 18px 25px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
     margin-top: 50px;
     position: relative;
     z-index: 11;
 }
 .post_btn:hover {
     border: 1px solid #f26146;
-    width: 282px;
     display: flex;
-    max-width: 800px;
     margin: 0 auto;
     background: #fff;
     color: #f26146;
     border-radius: 100px;
-    padding: 15px 55px;
-    box-sizing: border-box;
+    padding: 18px 25px;
     font-size: 20px;
+    text-align: center;
+
     font-weight: bold;
     margin-top: 50px;
     position: relative;
@@ -389,14 +388,16 @@ img {
     }
     .nav-top {
         max-width: 767px;
-        font-size: 3.3vw;
-        padding-top: 25px;
-        margin-bottom: 50px;
+        font-size: 30px;
+        margin-bottom: 38px;
     }
     .nav_wrap li {
         max-width: 767px;
-        font-size: 2.4vw;
+        font-size: 20px;
         padding: 40px 0 20px 20px;
+    }
+    .nav_wrap span {
+        font-size: 16px;
     }
     .scroll {
         bottom: 0;
@@ -467,21 +468,6 @@ img {
     .contactform {
         padding: 0 20px;
     }
-    .post_btn {
-        max-width: 670px;
-        width: 70%;
-        font-size: 4.2vw;
-        display: flex;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-    .post_btn:hover {
-        max-width: 670px;
-        width: 70%;
-        font-size: 4.2vw;
-        text-align: center;
-    }
-
     .form_text {
         font-size: 16px;
     }
