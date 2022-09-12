@@ -282,7 +282,7 @@ img {
     right: 15%;
 }
 .story_outline {
-    padding-bottom: 50px;
+    padding-bottom: 65px;
 }
 /* 相談btn */
 .outline {
@@ -474,7 +474,7 @@ img {
         margin-left: 322px;
     }
     .story_wrap_right {
-        margin-top: 40px;
+        margin-top: 60px;
     }
     .contact_cta {
         max-width: 767px;
@@ -555,7 +555,10 @@ img {
         padding: 0 10px 0 26px;
     }
     .title {
-        font-size: 26px;
+        font-size: 18px;
+    }
+    .subtitle {
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 550px) {
@@ -575,22 +578,17 @@ img {
     }
 }
 @media screen and (max-width: 490px) {
-    .title {
-        font-size: 21px;
-    }
-    .subtitle {
-        font-size: 14px;
-    }
-    .myself {
-        margin-top: 20px;
-        font-size: 16px;
-    }
-    .myself_text {
-        font-size: 14px;
-    }
     .about_pic {
         width: 55%;
         padding-left: 10px;
+    }
+    .myself {
+        margin-top: 13px;
+        font-size: 14px;
+    }
+    .myself_text {
+        font-size: 13px;
+        margin-top: 6px;
     }
     .story_left p,
     .story_right p {
@@ -604,33 +602,26 @@ img {
         margin-left: 20px;
     }
     .story_right {
-        margin-left: 122px;
+        margin-left: 80px;
     }
     .text_number01 {
-        top: 32px;
-        left: 33%;
+        top: -21px;
+        left: 22%;
+        width: 22%;
     }
     .text_number02 {
-        right: 34%;
-        top: -6%;
+        right: 4%;
+        top: 42%;
+        width: 22%;
     }
     .text_number03 {
-        left: 77%;
+        left: 32%;
+        top: -5%;
+        width: 22%;
     }
     .text_number04 {
-        top: 20%;
+        top: 12%;
         right: 6%;
-    }
-}
-@media screen and (max-width: 375px) {
-    .about_detail {
-        padding: 0 10px 0 10px;
-    }
-    .about_pic {
-        margin-top: 10px;
-    }
-    .contact_cta,
-    .contact_cta:hover {
-        width: 35%;
+        width: 22%;
     }
 }

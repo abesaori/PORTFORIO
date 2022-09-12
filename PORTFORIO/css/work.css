@@ -226,13 +226,11 @@ img {
     }
     .nav-top {
         max-width: 767px;
-        font-size: 30px;
         padding-top: 25px;
         margin-bottom: 50px;
     }
     .nav_wrap li {
         max-width: 767px;
-        font-size: 20px;
         padding: 40px 0 20px 20px;
     }
     .nav_wrap span {
@@ -342,10 +340,6 @@ img {
     }
     .work_line_school {
         background: url(../image/schoolline_sp.png) repeat-y top left;
-    }
-    .work_pic {
-        width: 63.5%;
-        margin-left: 50px;
     }
 }
 /* main visual */
@@ -554,6 +548,7 @@ h3 {
     }
     .overview_wrap dl {
         max-width: 650px;
+        font-size: 15px;
     }
     .text_detail {
         max-width: 630px;
@@ -595,6 +590,7 @@ h3 {
     .work_pic {
         position: relative;
         z-index: 3;
+        margin-left: 30px;
     }
     /* work detail */
     .capture_bottom ul {
@@ -605,13 +601,22 @@ h3 {
         justify-content: space-between;
     }
     .overview_wrap dt {
-        font-size: 16px;
+        font-size: 15px;
     }
     .overview_wrap dd {
-        font-size: 16px;
+        font-size: 15px;
     }
     .text {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.8em;
+    }
+    h2,
+    .text_detail,
+    h3 {
+        font-size: 17px;
+    }
+    .sub {
+        font-size: 15px;
     }
     .text_detail {
         width: 80%;
@@ -632,11 +637,10 @@ h3 {
         position: relative;
         z-index: 2;
     }
-}
-@media screen and (max-width: 550px) {
     .important_work {
         display: block;
         padding: 8px 0 8px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 440px) {
@@ -668,12 +672,12 @@ h3 {
     display: none;
 }
 .request_text {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     padding: 45px 0 20px;
 }
 .request_sub {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.75em;
     width: 95%;
     margin: 0 auto;
@@ -681,14 +685,10 @@ h3 {
 .turn {
     display: none;
 }
-.importent {
-    font-size: 15px;
-    line-height: 2.5em;
-}
 .contact {
     display: flex;
     justify-content: center;
-    margin-top: 56px;
+    margin-top: 45px;
 }
 .contact_cta:hover {
     display: flex;
@@ -716,17 +716,6 @@ h3 {
     font-weight: bold;
     box-sizing: border-box;
 }
-@media screen and (max-width: 1050px) {
-    /* contact */
-    .request_text {
-        font-size: 25px;
-    }
-}
-@media screen and (max-width: 880px) {
-    .request_sub {
-        font-size: 18px;
-    }
-}
 @media screen and (max-width: 767px) {
     .home_back:hover,
     .home_back {
@@ -734,28 +723,18 @@ h3 {
         width: 170px;
         padding: 14px 20px;
     }
-}
-@media screen and (max-width: 660px) {
+    .request_text {
+        font-size: 19px;
+    }
+    .request_sub {
+        font-size: 14px;
+        width: 88%;
+    }
     .block {
         display: none;
     }
     .turn {
         display: block;
-    }
-    .importent {
-        line-height: 1.8em;
-        padding: 0 10px;
-    }
-    .request_text {
-        font-size: 21px;
-    }
-}
-@media screen and (max-width: 495px) {
-    .request_sub {
-        font-size: 15px;
-    }
-    .importent {
-        font-size: 14px;
     }
 }
 /* footer */

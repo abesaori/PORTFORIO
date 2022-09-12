@@ -167,6 +167,7 @@ img {
 .info_text {
     max-width: 800px;
     margin: 0 auto;
+    width: 80%;
     text-align: left;
     font-size: 18px;
     line-height: 1.7em;
@@ -175,6 +176,7 @@ img {
 .wrap_wrap {
     max-width: 800px;
     margin: 0 auto;
+    width: 80%;
     text-align: left;
     font-size: 18px;
     line-height: 1.7em;
@@ -183,6 +185,7 @@ img {
 .insta_wrap {
     max-width: 800px;
     margin: 0 auto;
+    width: 80%;
     text-align: left;
     border-top: 1px solid #2d2d2d;
     border-bottom: 1px solid #2d2d2d;
@@ -216,6 +219,7 @@ img {
     position: relative;
     top: 80%;
     max-width: 800px;
+    width: 80%;
     display: flex;
     justify-content: left;
     margin: 0 auto;
@@ -258,6 +262,7 @@ img {
     top: 70%;
     width: 100%;
     margin-top: -20px;
+    margin-bottom: -1px;
     height: 21vh;
 }
 .wave-under {
@@ -349,8 +354,7 @@ img {
     text-align: center;
     border-top: 1px solid rgba(45, 45, 45, 0.5);
 }
-/* レスポンシブ */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
     /* hambuger menu */
     .hamburger {
         right: 5%;
@@ -405,9 +409,8 @@ img {
     }
     /* top_page */
     .logo {
-        max-width: 150px;
-        margin-bottom: 40px;
-        margin-top: 18px;
+        max-width: 121px;
+        margin-top: 21px;
     }
     .title {
         font-size: 35px;
@@ -416,53 +419,24 @@ img {
         margin-bottom: 55px;
     }
     .info_text {
-        max-width: 700px;
+        max-width: 670px;
+        font-size: 16px;
         padding-bottom: 5px;
     }
     .wrap_wrap {
-        max-width: 700px;
-    }
-    .insta_wrap {
-        max-width: 700px;
-        margin-bottom: 20px;
-        padding: 17px 0;
-        box-sizing: border-box;
-    }
-    .puestion {
-        max-width: 700px;
-    }
-}
-@media screen and (max-width: 860px) {
-    /* hambuger menu */
-    .hamburger {
-        right: 3%;
-        top: 3%;
-        height: 35px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .logo {
-        max-width: 121px;
-        margin-top: 21px;
-    }
-    .info_text {
         max-width: 670px;
-        padding: 0 20px 5px 20px;
-        font-size: 16px;
-    }
-    .wrap_wrap {
-        max-width: 670px;
-        padding: 10px 20px;
+        width: 80%;
         font-size: 16px;
     }
     .insta_wrap {
         width: 90%;
         max-width: 670px;
+        margin-bottom: 20px;
+        padding: 15px 0;
+        box-sizing: border-box;
     }
     .puestion {
         max-width: 670px;
-        padding-left: 20px;
     }
     .contactform {
         padding: 0 20px;

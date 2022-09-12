@@ -61,7 +61,7 @@ $('#wave').wavify({
     color: '#0bd',
     speed: .25
   });
-//   フォーム
+  //   フォーム
 jQuery("#my-form").submit(function (event) {
 	event.preventDefault();
 
