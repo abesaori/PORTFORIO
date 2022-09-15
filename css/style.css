@@ -730,8 +730,8 @@ img {
 /* work */
 .wave-under {
     width: 100%;
-    height: 42vh;
-    margin-top: -117px;
+    height: 37vh;
+    margin-top: -149px;
 }
 .back_color {
     background: #f4d7e5;
@@ -740,7 +740,7 @@ img {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 36px;
 }
 .title_padding {
     padding-top: 170px;
@@ -767,8 +767,8 @@ img {
     }
     .wave-under {
         width: 100%;
-        height: 33vh;
-        margin-top: -100px;
+        height: 24vh;
+        margin-top: -75px;
     }
     .title_padding {
         padding-top: 53px;
@@ -778,14 +778,12 @@ img {
     }
 }
 /* slider */
-.slider {
-    max-width: 1366px;
-    margin: 0 auto;
-    align-items: center;
-    overflow: hidden;
-}
 .work_slider img {
-    width: 85%;
+    width: 435px;
+    border-radius: 30px;
+}
+.work_slider {
+    max-width: 1366px;
     margin: 0 auto;
 }
 .slick-prev:before,
@@ -796,14 +794,15 @@ img {
     bottom: -35px;
 }
 .slick-next {
-    right: 16px;
+    right: 9px;
 }
 .slick-prev {
-    left: 5px;
+    left: -15px;
     position: absolute;
     z-index: 10;
 }
 .work_pic:hover {
+    display: block;
     opacity: 0.7;
 }
 .viewmore {
@@ -827,16 +826,22 @@ img {
     padding-top: 70px;
 }
 @media screen and (max-width: 767px) {
-    .slider {
-        padding-top: 48px;
+    .work_slider {
+        max-width: 767px;
+        margin: 0 auto;
     }
     .slick-dots {
         bottom: -41px;
+    }
+    .slick-prev {
+        left: 10px;
     }
     .slider_detail {
         margin-top: 20px;
     }
     .work_slider img {
+        width: 100%;
+        border-radius: 30%;
         height: auto;
         opacity: 0.3;
         transform: scale(0.5);
@@ -846,7 +851,7 @@ img {
     /* 中央のスライド */
     .slider_detail .slick-center img {
         opacity: 1;
-        transform: scale(1.4);
+        transform: scale(1.45);
     }
     .viewmore {
         max-width: 767px;

@@ -8,7 +8,7 @@ $(function () {
     // slider 
     $('.work_slider').slick({
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2500,
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -16,7 +16,6 @@ $(function () {
             {
                 breakpoint:767,
                 settings:{
-                      autoplay: true,
                       dots: true, 
                       centerMode: true, 
                       centerPadding: '0px', 
