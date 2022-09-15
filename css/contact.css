@@ -263,7 +263,7 @@ img {
     width: 100%;
     margin-top: -20px;
     margin-bottom: -1px;
-    height: 21vh;
+    height: 17vh;
 }
 .wave-under {
     width: 100%;
@@ -279,7 +279,7 @@ img {
     margin: 0 auto;
 }
 .contactform li {
-    padding-bottom: 30px;
+    padding: 10px 0 17px;
 }
 .form_text {
     font-size: 18px;
