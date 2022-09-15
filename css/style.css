@@ -1164,15 +1164,13 @@ details summary::before {
         padding-top: 40px;
     }
     .QandA_detail {
-        display: inline-block;
-        text-align: left;
         padding-top: 20px;
     }
     .Q_img {
         padding-right: 10px;
     }
     .turn {
-        display: inline-block;
+        display: block;
     }
     .Q_text {
         display: inline-block;
