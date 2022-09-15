@@ -1173,8 +1173,12 @@ details summary::before {
         display: block;
     }
     .Q_text {
-        display: inline-block;
+        display: block;
         line-height: 1.5em;
+    }
+    .QandA_conteiner {
+        display: flex;
+        align-items: flex-start;
     }
     details summary::before {
         margin-right: 10px;
