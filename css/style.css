@@ -173,7 +173,7 @@ img {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 38%;
     width: 1px;
     height: 100px;
     background: #2d2d2d;
@@ -470,7 +470,7 @@ img {
         content: "";
         position: absolute;
         bottom: 23%;
-        height: 55px;
+        height: 65px;
         left: 39%;
     }
     .topwrap {
