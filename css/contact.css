@@ -147,8 +147,7 @@ img {
 .logo {
     margin: 0 auto;
     width: 203px;
-    margin-bottom: 65px;
-    margin-top: 40px;
+    padding: 40px 0 65px;
 }
 /* contact-text */
 .title,
@@ -211,7 +210,7 @@ img {
 }
 .insta_left {
     font-size: 18px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 /* よくある質問 */
 .puestion {
@@ -235,7 +234,7 @@ img {
 .back {
     padding-left: 15px;
 }
-.content_btn {
+.back_btn {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -247,10 +246,7 @@ img {
     font-weight: bold;
     box-sizing: border-box;
 }
-.btn_text {
-    font-size: 16px;
-}
-.content_btn:hover {
+.back_btn:hover {
     opacity: 0.7;
 }
 
@@ -320,7 +316,7 @@ img {
     background: #f26146;
     color: #fff;
     border-radius: 100px;
-    padding: 18px 25px;
+    padding: 18px 35px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: bold;
@@ -336,7 +332,7 @@ img {
     background: #fff;
     color: #f26146;
     border-radius: 100px;
-    padding: 18px 25px;
+    padding: 18px 35px;
     font-size: 20px;
     text-align: center;
 
@@ -409,7 +405,7 @@ img {
     /* top_page */
     .logo {
         max-width: 121px;
-        margin-top: 21px;
+        padding: 25px 0 50px;
     }
     .title {
         font-size: 35px;
@@ -428,7 +424,7 @@ img {
         font-size: 16px;
     }
     .insta_wrap {
-        width: 90%;
+        width: 80%;
         max-width: 670px;
         margin-bottom: 20px;
         padding: 15px 0;
@@ -442,5 +438,170 @@ img {
     }
     .form_text {
         font-size: 16px;
+    }
+}
+
+/* Thanks page */
+.background {
+    background: url(../image/contact.png) repeat-y top left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.logo_detail {
+    width: 165px;
+    padding: 40px 0 50px;
+}
+.info_box {
+    margin: 0 auto;
+    max-width: 65%;
+    border: double 5px #ee768e;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.thanks_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #007598;
+    padding: 20px 0 5px;
+}
+.thanks_text {
+    text-align: center;
+    padding: 10px 0 50px;
+    box-sizing: border-box;
+}
+.sp {
+    display: none;
+}
+.text {
+    line-height: 1.7em;
+}
+.insta_detail {
+    padding-top: 10px;
+    max-width: 62%;
+    margin: 0 auto;
+    text-align: right;
+}
+.fa-brands {
+    font-size: 30px;
+    padding-left: 5px;
+}
+.contact_btn {
+    display: block;
+    max-width: 42%;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid #f26146;
+    background: #f26146;
+    color: #fff;
+    border-radius: 100px;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact_btn:hover {
+    text-align: center;
+    border: 1px solid #f26146;
+    background: #fff;
+    color: #f26146;
+    border-radius: 100px;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn_icon {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.thanks_btn {
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.text_weight {
+    font-weight: bold;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid rgba(45, 45, 45, 0.5);
+    max-width: 200px;
+    border-radius: 100px;
+    padding: 18px 0;
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+.footer_detail {
+    background: #fff;
+    padding: 25px 0 60px;
+    text-align: center;
+    border-top: 1px solid rgba(45, 45, 45, 0.5);
+}
+@media screen and (max-width: 1086px) {
+    .contact_btn {
+        max-width: 50%;
+    }
+    .speace {
+        display: none;
+    }
+}
+@media screen and (max-width: 910px) {
+    .contact_btn {
+        max-width: 55%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .logo_detail {
+        width: 165px;
+        padding: 30px 0 40px;
+    }
+    .thanks_title {
+        font-size: 22px;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+    .thanks_text {
+        text-align: center;
+        line-height: 1.5em;
+        padding: 10px 5px 35px;
+    }
+    .sp {
+        display: block;
+    }
+    .info_box {
+        max-width: 90%;
+        padding: 15px 25px;
+        box-sizing: border-box;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .contact_btn {
+        font-size: 16px;
+        max-width: 100%;
+        margin: 20px 0 5px;
+    }
+    .contact_btn:hover {
+        font-size: 16px;
+        max-width: 100%;
+        margin: 20px 0 5px;
+    }
+    .insta_detail {
+        max-width: 85%;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .thanks_btn {
+        margin-top: 60px;
     }
 }

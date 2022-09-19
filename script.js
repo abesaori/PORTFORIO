@@ -72,11 +72,11 @@ jQuery("#my-form").submit(function (event) {
 	/* チェックボックスは数分だけ作る */
 	let checks = ["", "", "", ""];
 	let count = 0;
-	jQuery("[name=\"entry.xxxxxxxxx\"]:checked").each(function() {
+	jQuery("[name=\"entry.119829565\"]:checked").each(function() {
 		checks[count] = jQuery(this).val();
 		count++;
 	});
-	let select = jQuery("[name=\"entry.xxxxxxxxx\"]").val();
+	let select = jQuery("[name=\"entry.119829565\"]").val();
 
 	jQuery.ajax({
 			url: baseUrl,

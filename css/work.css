@@ -448,17 +448,23 @@ h3 {
     padding: 25px 0 5px 45px;
 }
 .capture_bottom ul {
-    max-width: 750px;
+    max-width: 87%;
     margin: 0 auto;
-    width: 90%;
     display: flex;
-    justify-content: space-between;
 }
-.lp_pc {
-    max-width: 60%;
+.capture_wrap {
+    font-size: 17px;
+    font-weight: bold;
 }
 .lp_sp {
-    max-width: 100%;
+    width: 100%;
+}
+.sp_detail {
+    margin-left: 15px;
+}
+.lp_pc {
+    width: 100%;
+    margin-right: 15px;
 }
 .fadeIn {
     opacity: 0;
@@ -556,9 +562,6 @@ h3 {
     .capture_bottom {
         max-width: 730px;
     }
-    .capture_bottom ul {
-        width: 80%;
-    }
 }
 @media screen and (max-width: 830px) {
     h2,
@@ -594,9 +597,8 @@ h3 {
     }
     /* work detail */
     .capture_bottom ul {
-        max-width: 630px;
         margin: 0 auto;
-        width: 80%;
+        width: 85%;
         display: flex;
         justify-content: space-between;
     }
@@ -628,9 +630,6 @@ h3 {
         max-width: 500px;
         position: relative;
         z-index: 2;
-    }
-    .lp_pc {
-        width: 70%;
     }
     .salon_pic {
         max-width: 68%;

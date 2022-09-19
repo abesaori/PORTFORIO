@@ -648,7 +648,7 @@ img {
     color: #0bd;
 }
 .viewmore:hover {
-    border: #717070 1px solid;
+    border: #717070 2px solid;
     color: rgb(5, 166, 195);
 }
 
@@ -779,7 +779,7 @@ img {
 }
 /* slider */
 .work_slider img {
-    width: 435px;
+    width: 415px;
     border-radius: 30px;
 }
 .work_slider {
@@ -794,10 +794,10 @@ img {
     bottom: -35px;
 }
 .slick-next {
-    right: 9px;
+    right: 13px;
 }
 .slick-prev {
-    left: -15px;
+    left: -35px;
     position: absolute;
     z-index: 10;
 }
