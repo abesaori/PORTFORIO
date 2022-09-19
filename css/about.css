@@ -170,6 +170,7 @@ img {
 }
 .me_pic {
     border-radius: 10px;
+    width: 650px;
 }
 .about_wrap {
     max-width: 1000px;
@@ -185,8 +186,8 @@ img {
     color: #007598;
     font-size: 40px;
     font-weight: bold;
-    margin-top: 25px;
     letter-spacing: 1.5px;
+    margin-top: 20px;
 }
 .subtitle {
     color: #007598;
@@ -278,8 +279,8 @@ img {
 }
 .text_number04 {
     position: absolute;
-    top: -15%;
-    right: 15%;
+    top: -11%;
+    right: 9%;
 }
 .story_outline {
     padding-bottom: 65px;
@@ -296,7 +297,7 @@ img {
     justify-content: center;
     border: 1px solid #f26146;
     margin: 0 auto;
-    width: 23%;
+    width: 18%;
     background: #fff;
     color: #f26146;
     border-radius: 100px;
@@ -308,7 +309,7 @@ img {
     display: flex;
     justify-content: center;
     border: 1px solid #f26146;
-    width: 23%;
+    width: 18%;
     margin: 0 auto;
     background: #f26146;
     color: #fff;
@@ -446,7 +447,7 @@ img {
     .text_number02,
     .text_number03,
     .text_number04 {
-        width: 13%;
+        width: 20%;
     }
     .text_number01 {
         left: 14%;
@@ -459,6 +460,11 @@ img {
     .story_right {
         max-width: 450px;
         margin-left: 350px;
+    }
+}
+@media screen and (max-width: 913px) {
+    .me_pic {
+        width: 536px;
     }
 }
 @media screen and (max-width: 870px) {
@@ -593,7 +599,7 @@ img {
     .story_left p,
     .story_right p {
         font-size: 14px;
-        line-height: 1.55em;
+        line-height: 1.9em;
     }
     .strong {
         font-size: 14.5px;
@@ -605,23 +611,28 @@ img {
         margin-left: 80px;
     }
     .text_number01 {
-        top: -21px;
-        left: 22%;
-        width: 22%;
+        top: -20px;
+        left: 36%;
+        width: 25%;
     }
     .text_number02 {
         right: 4%;
-        top: 42%;
-        width: 22%;
+        top: 10%;
+        width: 25%;
     }
     .text_number03 {
-        left: 32%;
-        top: -5%;
-        width: 22%;
+        left: 27%;
+        top: -11%;
+        width: 25%;
     }
     .text_number04 {
-        top: 12%;
-        right: 6%;
-        width: 22%;
+        top: 3%;
+        right: 1%;
+        width: 25%;
+    }
+}
+@media screen and (max-width: 376px) {
+    .text_number04 {
+        top: 15%;
     }
 }
