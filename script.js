@@ -16,6 +16,8 @@ $(function () {
             {
                 breakpoint:767,
                 settings:{
+                    autoplay: true,
+                    autoplaySpeed: 2000,            
                       dots: true, 
                       centerMode: true, 
                       centerPadding: '0px', 
