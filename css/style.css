@@ -896,7 +896,7 @@ img {
     width: 55%;
 }
 .woman_text {
-    font-size: 42px;
+    font-size: 2.9vw;
     font-weight: bold;
     line-height: 1.58em;
     color: #007598;
@@ -918,9 +918,6 @@ img {
         width: 65%;
         padding-top: 10px;
     }
-    .woman_text {
-        font-size: 2.9vw;
-    }
 }
 @media screen and (max-width: 1130px) {
     .woman_conteiner {
@@ -936,8 +933,15 @@ img {
 @media screen and (max-width: 850px) {
     .woman_text {
         padding: 40px 0 0 50px;
+        font-size: 24px;
     }
 }
+@media screen and (max-width: 780px) {
+    .woman_text {
+        font-size: 23px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     /* be oneself */
     .be_oneself {
