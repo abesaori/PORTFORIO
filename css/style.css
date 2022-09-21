@@ -555,7 +555,7 @@ img {
 .backcolor {
     background: #f4d7e5;
 }
-/*Shrinking for mobile*/
+/*mobile*/
 @media screen and (max-width: 767px) {
     .waves {
         min-height: 40px;

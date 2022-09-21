@@ -54,19 +54,11 @@ $(function () {
         });
     });
 })(jQuery);
-// wave 波の実装
-$('#wave').wavify({
-    height: 60,
-    bones: 3,
-    amplitude: 40,
-    color: '#0bd',
-    speed: .25
-  });
 
-  //// to top///
+//// to top///
   $(function(){
     // TOPに戻るボタン
-        var topBtn = $('#page-top');
+        var topBtn = $('#page_top');
         topBtn.hide();
      
         //スクロールが100に達したらボタン表示
