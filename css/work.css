@@ -368,7 +368,7 @@ img {
     }
 }
 .work_pic {
-    max-width: 65.5%;
+    max-width: 90%;
 }
 /* work detail */
 h2 {
@@ -552,6 +552,10 @@ h3 {
         max-width: 700px;
         padding: 90px 0 5px 20px;
     }
+    .capture_outline {
+        margin-bottom: 35px;
+        padding: 25px 0 5px 20px;
+    }
     .overview_wrap dl {
         max-width: 650px;
         font-size: 15px;
@@ -593,7 +597,7 @@ h3 {
     .work_pic {
         position: relative;
         z-index: 3;
-        margin-left: 30px;
+        margin: 10px 0 20px;
     }
     /* work detail */
     .capture_bottom ul {
