@@ -179,6 +179,7 @@ img {
 }
 .about_detail {
     padding-left: 60px;
+    margin-top: 10px;
 }
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP");
 
@@ -538,7 +539,8 @@ img {
     }
     .title {
         margin-top: 0;
-        font-size: 22px;
+        font-size: 24px;
+        letter-spacing: 0px;
     }
     .myself {
         margin-top: 40px;
@@ -602,7 +604,6 @@ img {
 @media screen and (max-width: 490px) {
     .about_pic {
         width: 55%;
-        padding-left: 10px;
     }
     .myself {
         margin-top: 13px;
