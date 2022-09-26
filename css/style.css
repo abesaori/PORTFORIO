@@ -626,7 +626,7 @@ img {
 }
 .title {
     padding-top: 80px;
-    font-size: 35px;
+    font-size: 45px;
 }
 .subtitle {
     font-size: 16px;
@@ -646,9 +646,10 @@ img {
 }
 .viewmore {
     color: #0bd;
+    box-sizing: border-box;
 }
 .viewmore:hover {
-    border: #717070 2px solid;
+    border: #717070 1px solid;
     color: rgb(5, 166, 195);
 }
 
@@ -726,7 +727,13 @@ img {
         width: 72%;
     }
 }
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP");
 
+.title,
+.about,
+.title_contact {
+    font-family: "Noto Sans JP", sans-serif;
+}
 /* work */
 .wave-under {
     width: 100%;
@@ -779,7 +786,7 @@ img {
 }
 /* slider */
 .work_slider img {
-    width: 415px;
+    width: 410px;
     border-radius: 30px;
 }
 .work_slider {
@@ -826,6 +833,9 @@ img {
     padding-top: 70px;
 }
 @media screen and (max-width: 767px) {
+    .title {
+        font-size: 39px;
+    }
     .work_slider {
         max-width: 767px;
         margin: 0 auto;
@@ -896,6 +906,9 @@ img {
     width: 55%;
 }
 .woman_text {
+    font-family: YakuHanJP, Roboto, "Kinto Sans", "Helvetica Neue", "Segoe UI",
+        Helvetica, "游ゴシック体", YuGothic, "Yu Gothic M", "游ゴシック Medium",
+        "Yu Gothic Medium", "メイリオ", Meiryo, sans-serif;
     font-size: 2.9vw;
     font-weight: bold;
     line-height: 1.58em;
@@ -1001,7 +1014,7 @@ img {
 
 /* //-bound// */
 .about {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     letter-spacing: 2px;
     color: #fff;
@@ -1035,6 +1048,9 @@ img {
     text-align: justify;
 }
 @media screen and (max-width: 767px) {
+    .about {
+        font-size: 39px;
+    }
     .aboutme_wrap {
         display: block;
     }
@@ -1131,7 +1147,7 @@ img {
 .a_text {
     font-size: 17px;
     line-height: 1.89em;
-    margin-left: 52px;
+    margin-left: 95px;
     width: 82%;
     margin-bottom: 10px;
 }
@@ -1178,6 +1194,9 @@ details summary::before {
         display: block;
         line-height: 1.5em;
     }
+    .Q_topline {
+        margin-top: 6px;
+    }
     .QandA_conteiner {
         display: flex;
         align-items: flex-start;
@@ -1188,7 +1207,8 @@ details summary::before {
     .a_text {
         font-size: 15px;
         line-height: 1.75em;
-        margin-left: 30px;
+        margin-left: 70px;
+        width: 71%;
     }
 }
 @media screen and (max-width: 375px) {
@@ -1204,7 +1224,7 @@ details summary::before {
 }
 /* contact */
 .title_contact {
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
     font-weight: bold;
     color: #007598;
@@ -1261,6 +1281,9 @@ details summary::before {
     z-index: 8;
 }
 @media screen and (max-width: 767px) {
+    .title_contact {
+        font-size: 39px;
+    }
     .contactunder_wave {
         height: 35vh;
     }
@@ -1302,8 +1325,8 @@ details summary::before {
     width: 50px;
     height: 50px;
     position: fixed;
-    right: 15px;
-    bottom: 0;
+    right: 20px;
+    bottom: 20px;
     background: #019ecd;
     opacity: 0.6;
     border-radius: 50%;

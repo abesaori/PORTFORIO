@@ -150,6 +150,12 @@ img {
     padding: 40px 0 65px;
 }
 /* contact-text */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP");
+
+.title {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
 .title,
 .subtitle {
     text-align: center;
