@@ -350,7 +350,7 @@ img {
     padding-top: 19px;
 }
 .work_detail {
-    margin-top: 35px;
+    margin: 35px 0 0 106px;
     text-align: center;
 }
 .work_detail {
@@ -448,7 +448,7 @@ h3 {
     padding: 25px 0 5px 45px;
 }
 .capture_bottom ul {
-    max-width: 87%;
+    max-width: 53%;
     margin: 0 auto;
     display: flex;
 }
@@ -634,6 +634,12 @@ h3 {
         max-width: 500px;
         position: relative;
         z-index: 2;
+    }
+    .work_detail {
+        margin: 35px 0 0 18px;
+    }
+    .capture_bottom ul {
+        max-width: 80%;
     }
     .salon_pic {
         max-width: 68%;
